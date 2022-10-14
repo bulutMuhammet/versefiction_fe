@@ -1,0 +1,194 @@
+body{
+    font-family: 'Ubuntu', serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #00283C;
+}
+
+
+@keyframes left_top {
+    from{
+        top: -300px;
+        left: -150px;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+
+}
+
+@keyframes right_bottom {
+    from{
+        right: -150px;
+        bottom: -300px;
+    }
+    to {
+        right: 0;
+        bottom: 0;
+
+    }
+
+}
+
+.left_wave{
+    position: fixed;
+    animation-name: left_top;
+    animation-duration: 1s;
+
+}
+
+.right_wave{
+    position: fixed;
+    overflow:hidden;
+    max-height: 80%;
+    animation-name: right_bottom;
+    animation-duration: 1s;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .left_wave {
+        visibility: hidden;
+
+    }
+}
+
+#register{
+    background: #071217;
+    border-radius: 30px;
+    top: 20%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 50px 50px 0 50px;
+}
+
+
+#login{
+    background: #071217;
+    border-radius: 30px;
+    top: 25%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 50px 50px 0 50px;
+}
+
+.card-title{
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+    font-weight: 380;
+
+}
+.input{
+    background: rgba(125, 170, 224, 0.15);
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 17px;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.21);
+    height: 40px;
+    margin-bottom: 15px;
+}
+.input:focus {
+    background: rgba(125, 170, 224, 0.15);
+    border-color: transparent;
+    color: #FFFFFF;
+
+}
+.input:not(:placeholder-shown) {
+    background: rgba(125, 170, 224, 0.15);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+.button{
+    height: 40px;
+    background: #73AFE2;
+    border-radius: 10px;
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.button:hover{
+    background: #5b8bb4;
+    color: white;
+
+
+}
+.label{
+    font-style: normal;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+.sign_in{
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+}
+
+.sign_up{
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+}
+strong{
+    font-size: 17px;
+    color: white;
+    text-decoration:none;
+    font-weight: 400;
+}
+
+.forgot-password{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-top: 65px;
+
+}
+
+.forgot-password a{
+    color: white;
+}
+
+
+.terms{
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 80px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.logo{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 5%;
+    max-width: 70%;
+}
+
+#modal_fp{
+    background: #071217;
+    color: white;
+    border-radius: 25px;
+}
+
+.fp_email_label{
+    font-size: 15px;
+    line-height: 13px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+}

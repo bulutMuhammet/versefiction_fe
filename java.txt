@@ -1,0 +1,50 @@
+Method overloading:
+aynı isimli farklı argümentleri olan 
+metodlar
+
+Java Serialization:
+Java Serialization API sayesinde 
+bir nesnenin birebir kopyasını,
+ Java platformu dışında da depolayabiliriz. Bu mekanizma ile daha sonra,  nesneyi depolanan yerden çekip, aynı durum (state) ve özellikleri ile kullanmaya devam edebiliriz. Tüm bu sisteme, Object Serialization 
+(Nesne Serileştirme) adı verilir.
+
+Java Reflection Nedir:
+Reflection (Yansıma) özelliği nesnelerin sınıf, method, değişken ve diğer 
+özelliklerine ulaşmamıza yardımcı olur.
+
+
+Java Annotation:
+Annotation, Java’da method, sınıf ve değişkenlere özellik katmak için kullanılan yapılardır. Üst bilgi olarak düşünebiliriz
+
+Hibernate:
+-ORM kütüphanesidir
+
+public: Her yerden erişilebilir.
+protected: Sınıf, paket ve altsınıflar tarafından erişilebilir
+private: Sadece sınıf içerisinden erişilebilir.
+default(erişim belirleyici yok): Bir erişim belirleyici kullanmadan sınıf ve paket içerisinden erişilebilir.
+
+Abstraction: Bir sınıfta davranış ve özelliklerin tanımlanmasıdır.
+Encapsulation: Kapsülleme sayesinde, hangi özellik ve davranışların program dışına gösterilip gösterilmeyeceğini belirleriz.
+Inheritance: : Sınıfların birbirinden türeme durumudur. Farklı sınıflar arasındaki ilişki “is a” şeklinde ifade edilir.
+Inferface: Uygulamaların donanım yapılarıyla ve birbirleriyle iletişim kurması için kullandığı bir yapıdır. Zorunlu olarak tanımlanması gereken metotları belirtir.
+Polymorphism: Methodların objeye göre farklı çıktılar üretmesi veya farklı işler yapmasıdır. Örneğin: Alt sınıfların farklı davranışları göstermesi.
+
+poliformizm:
+
+Hayvan hayvan = new Kedi("tekir")
+
+Maven genellikle Java platformunda yer alan komutların derlenmesi sırasında kullanılan otomasyon ve inşa aracıdır.
+
+Aynı interface'i veya abstract sınıfı implement etmiş etmiş factory nesnelerinin üretiminden sorumlu pattern dir.
+
+
+S.O.L.I.D:
+1) S : Single Responsibility Principle (SRP)
+Single Responsibility Principle’a göre, her method ve class’ın tek bir görevi ve sorumluluğu vardır.
+
+2) O : Open Closed Principle (OSP)
+Open Closed Principle’a göre her class geliştirmeye açık olmalı fakat değişime kapalı olmadılır.
+
+3) L: Liskov Substitution Principle (LSP)
+

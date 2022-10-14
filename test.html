@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+
+
+.dark_button{
+    border-radius: 10px;
+    background: #071217;
+    color: white;
+    border-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    
+}
+.div{
+    width:200px;
+}
+.dark_button_slide{
+    border-radius: 0px;
+    background: #071217;
+    color: white;
+    border-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    
+}
+
+    </style>
+</head>
+<body>
+    <!-- <h1>CSS Dropdown Menu</h1> -->
+
+<nav>
+  <div class="div">
+    <button class="dark_button" id="acc" onclick="f()"> login or register</button>
+    <div class="slide" id="slide">
+        <button class="dark_button_slide">login</button>
+        <button class="dark_button_slide">register</button>
+             
+    </div>    
+  </div>  
+
+  
+</nav> 
+<script>
+    function f(){
+        // alert("naber")
+        console.log(document.getElementById("slide"))
+        document.getElementById("slide").style = "height:300px;"
+    }
+</script>
+</body>
+</html>
