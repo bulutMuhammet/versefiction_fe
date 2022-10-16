@@ -19,6 +19,7 @@
     />
 
     <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/listing.css">
     <title>versefiction</title>
 </head>
 
@@ -104,8 +105,12 @@
                 and ideas in their minds to create a fictional universe.
             </p>
             <div class="row justify-content-around">
-                <button onClick="show_me()" class="sky_button col-12 mb-3 mt-5 m-lg-0 col-lg-5 ">look what people dreamed</button>
-                <button onClick="window.location='/register.html'" class="sky_button night_button col-12  m-lg-0  col-lg-5 ">fiction your own universe</button>
+                <button onClick="show_me()" class="sky_button col-12 mb-3 mt-5 m-lg-0 col-lg-5 ">look what people
+                    dreamed
+                </button>
+                <button onClick="window.location='/register.html'"
+                        class="sky_button night_button col-12  m-lg-0  col-lg-5 ">fiction your own universe
+                </button>
             </div>
         </div>
         <div class="col-5 right_content">
@@ -117,9 +122,9 @@
                     <div class="swiper-slide bg-dark">
                         <img class="m-5" style="max-width:80%; max-height:80%;" src="images/story1.png" alt="">
                     </div>
-<!--                    <div class="swiper-slide bg-success">-->
-<!--                        hikayeler falan-->
-<!--                    </div>-->
+                    <!--                    <div class="swiper-slide bg-success">-->
+                    <!--                        hikayeler falan-->
+                    <!--                    </div>-->
                     <div class="swiper-slide" style="background-color: #9E98D7">
                         <img class="m-5" style="max-width:80%; max-height:80%;" src="images/story1.png" alt="">
 
@@ -149,57 +154,87 @@
     </div> -->
 </div>
 <div class="list-page" id="list-page">
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
+    <div class="container listing_div">
+        <div class="row filter_bar">
+            <div class="col-12">
+                <button class="dark_button btn-round db-lg b-active"><i class="fa-solid fa-rocket mr-3"></i>latest
+                </button>
+                <button class="dark_button btn-round db-lg  ml-4"><i class="fa-solid fa-fire mr-3"></i>hot</button>
+                <button class="dark_button btn-round db-lg  ml-4"><i class="fa-solid fa-star mr-3"></i>best</button>
 
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
+                <div class="btn-group float-right">
+                    <button class="dark_button btn-round db-lg   float-right dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                            class="fa-solid fa-list mr-3"></i><span class="mr-2">show all</span>
+                    </button>
+                    <button class="dark_button btn-round db-mb float-right dropdown-toggle" id="filter_by"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                            class="fa-solid fa-list"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-toggle-split text-center dropdown-menu-sm-right show_dropdown" aria-labelledby="#filter_by" >
+                        <a class="dropdown-item d-active" href="#">all</a>
+                        <a class="dropdown-item" href="#">stories</a>
+                        <a class="dropdown-item" href="#">universes</a>
+                        <a class="dropdown-item" href="#">entities</a>
+                    </div>
+                </div>
 
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
 
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
+                <div class="btn-group">
+                    <button class="dark_button btn-round db-mb  dropdown-toggle" id="sort_by"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-rocket mr-3"></i>latest
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left  dropdown-toggle-split show_dropdown " aria-labelledby="#sort_by" >
+                        <a class="dropdown-item  d-active" href="#"><i class="fa-solid fa-rocket mr-3"></i>latest</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-fire mr-3"></i>hot</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-star mr-3"></i>best</a>
+                    </div>
+                </div>
 
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
 
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    içerikbr <br>
-    v
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row p-5 row justify-content-between just">
+
+            <div class="story_wrapper">
+                <div class="story_tag p-2 pl-3 pr-3 "> new chapter </div>
+                <div class="card story_div mr-5 mb-3" style="width: 18rem;">
+                    <img class="card-img-top p-3 pb-0 banner" src="images/story.png" alt="Card image cap">
+                    <div class="card-body pt-0 pb-3">
+                        <h5 class="card-title text-center mb-4">spider-man homecoming</h5>
+                        <p class="card-text text-center text-muted">from <img class="ml-2 mr-2 mb-0" src="images/marvel_logo.png" alt=""> universe</p>
+                    </div>
+                </div>
+            </div><div class="story_wrapper">
+                <div class="story_tag p-2 pl-3 pr-3 "> new chapter </div>
+                <div class="card story_div mr-5 mb-3" style="width: 18rem;">
+                    <img class="card-img-top p-3 pb-0 banner" src="images/story.png" alt="Card image cap">
+                    <div class="card-body pt-0 pb-3">
+                        <h5 class="card-title text-center mb-4">spider-man homecoming</h5>
+                        <p class="card-text text-center text-muted">from <img class="ml-2 mr-2 mb-0" src="images/marvel_logo.png" alt=""> universe</p>
+                    </div>
+                </div>
+            </div><div class="story_wrapper">
+                <div class="story_tag p-2 pl-3 pr-3 "> new chapter </div>
+                <div class="card story_div mr-5 mb-3" style="width: 18rem;">
+                    <img class="card-img-top p-3 pb-0 banner" src="images/story.png" alt="Card image cap">
+                    <div class="card-body pt-0 pb-3">
+                        <h5 class="card-title text-center mb-4">spider-man homecoming</h5>
+                        <p class="card-text text-center text-muted">from <img class="ml-2 mr-2 mb-0" src="images/marvel_logo.png" alt=""> universe</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
 </div>
 
 
