@@ -1,0 +1,256 @@
+body{
+    font-family: 'Ubuntu', serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #011A25;
+}
+.topnav {
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    /*animation: rainboww 1s;*/
+    background: #00283B;
+    background-image: url("../images/navbar_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+
+}
+
+.topnav .right_side {
+    float: right;
+    display: block;
+    /*right: 0;*/
+
+}
+
+.topnav .right_side_mobile {
+    float: right;
+    display: none;
+
+}
+
+.topnav div, .active {
+    float: left;
+    /* display: block; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background: transparent;
+    /* height: 70px;
+    line-height: 40px; */
+}
+
+.input_nav {
+    background: #071217;
+    border-radius: 30px;
+    font-size: 15px;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.21);
+    font-family: Ubuntu, FontAwesome;
+    margin-right: 25px;
+    width: 300px !important;
+    /* transform: translate(0%,-30%); */
+}
+
+.input_nav:focus {
+    background: #0c1e26;
+    border-color: black;
+    color: #FFFFFF;
+
+}
+
+.input_nav:not(:placeholder-shown) {
+    background: #0c1e26;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+
+.dark_button {
+    border-radius: 10px;
+    background: #071217;
+    color: white;
+    border-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 20px !important;
+    text-decoration: none;
+
+}
+
+.db-lg{
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+.db-mb{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: none;
+}
+.btn-round{
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.b-active{
+    background: black !important;
+}
+
+.dark_button:hover {
+    background: #040a0c !important;
+    color: white;
+    text-decoration: none
+}
+
+.dark_button:focus {
+    outline: transparent !important;
+}
+
+
+.dark_button_circle {
+    border-radius: 80px;
+    background: #071217;
+    color: white;
+    border-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 20px;
+
+}
+
+@media screen and (max-width: 765px) {
+    .right_side {
+        display: none !important;
+    }
+
+    .right_side_mobile {
+        display: block !important;
+    }
+
+
+}
+
+@media screen and (max-width: 390px) {
+    .right_side {
+        display: none !important;
+    }
+
+    .dark_button_circle {
+        padding: 10px 13px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 355px) {
+    .right_side {
+        display: none !important;
+    }
+
+    .dark_button_circle {
+        padding: 5px 6px !important;
+    }
+
+
+}
+/*---------------------------------- side bar */
+@keyframes open_side_bar {
+    from {
+        right: -200px;
+    }
+    to {
+        right: 0px;
+        box-shadow: 0px 0px 50px 0px #000000;
+    }
+}
+
+@keyframes close_side_bar {
+    from {
+        right: 0px;
+        box-shadow: 0px 0px 50px 0px #000000;
+    }
+    to {
+        right: -200px;
+        box-shadow: 0px 0px 0px 0px #000000;
+    }
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #011A25;
+    position: fixed;
+    right: -200px;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    z-index: 5;
+}
+
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+.sidebar .side_main {
+    background-color: black;
+    color: white;
+    padding: 20px 16px;
+    cursor: default;
+}
+
+.side_main button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.sidebar a:hover:not(.side_main) {
+    background-color: #022838;
+    color: white;
+}
+
+/* ------search--------- */
+#search-modal {
+    background: #121618;
+}
+
+.input_nav_search {
+    background: #000000;
+    border-radius: 30px;
+    font-size: 15px;
+    border-color: transparent;
+    color: rgba(255, 255, 255, 0.21);
+    font-family: Ubuntu, FontAwesome;
+    margin-right: 25px;
+    width: 100% !important;
+    /* transform: translate(0%,-30%); */
+}
+
+.input_nav_search:focus {
+    background: #0c1e26;
+    border-color: black;
+    color: #FFFFFF;
+
+}
+
+.input_nav_search:not(:placeholder-shown) {
+    background: #0c1e26;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+

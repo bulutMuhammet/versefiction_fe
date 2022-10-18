@@ -193,6 +193,7 @@ body {
 .left_content {
     width: 470px !important;
     margin-left: 120px;
+
 }
 
 .right_content{
@@ -427,9 +428,11 @@ body {
     animation-name: left_top;
     animation-duration: 1s;
     bottom: 0px;
-    left: 0;
+    left: 0px;
     z-index: -2;
 }
+
+
 
 .right_wave {
     position: absolute;
@@ -442,7 +445,28 @@ body {
     right: 0;
     bottom: 0;
 }
+@keyframes right_bottom {
+    from{
+        right: -300px;
+        bottom: -200px;
+    }
+    to {
+        right: 0;
+        bottom: 0;
+    }
 
+}
+@keyframes left_top {
+    from{
+        bottom: -300px;
+        left: -200px;
+    }
+    to {
+        bottom: 0px;
+        left: 0;
+    }
+
+}
 @media screen and (max-width: 886px) {
     .left_wave {
         display: none !important;

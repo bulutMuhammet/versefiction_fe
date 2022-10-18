@@ -5,6 +5,7 @@ document.getElementById("accounts").addEventListener('click', openSideBar)
 document.getElementById("close_side_bar").addEventListener('click', closeSideBar)
 document.addEventListener('click', bodyClick, true); 
 document.getElementById("show_me").addEventListener('click', show_me);
+
 window.onscroll = function() {scrollFunction()};
 
 function openSideBar(e){
@@ -47,4 +48,6 @@ function scrollFunction() {
     }
 }
 
-
+$('.story_div').click(function() {
+    $('#story_modal').modal('show')
+});

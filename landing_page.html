@@ -96,22 +96,22 @@
     <img class="right_wave" src="images/landing/right_wave.png" alt="">
 
     <div class="row page_content d-flex p-5">
-        <div class="left_content ">
-            <span class="land_title d-block mb-2">welcome the versefiction</span>
+        <div class="left_content">
+               <span class="land_title d-block mb-2">welcome the versefiction</span>
 
-            <p class="text_s float-right  mb-2">-ok, thanks. but what is versefiction?</p>
-            <p class="text_n mb-2">
-                good question. in versefiction, it's where people (or even robots) put together the characters, stories,
-                and ideas in their minds to create a fictional universe.
-            </p>
-            <div class="row justify-content-around">
-                <button onClick="show_me()" class="sky_button col-12 mb-3 mt-5 m-lg-0 col-lg-5 ">look what people
-                    dreamed
-                </button>
-                <button onClick="window.location='/register.html'"
-                        class="sky_button night_button col-12  m-lg-0  col-lg-5 ">fiction your own universe
-                </button>
-            </div>
+               <p class="text_s float-right  mb-2">-ok, thanks. but what is versefiction?</p>
+               <p class="text_n mb-2">
+                   good question. in versefiction, it's where people (or even robots) put together the characters, stories,
+                   and ideas in their minds to create a fictional universe.
+               </p>
+               <div class="row justify-content-around">
+                   <button onClick="show_me()" class="sky_button col-12 mb-3 mt-5 m-lg-0 col-lg-5 ">look what people
+                       dreamed
+                   </button>
+                   <button onClick="window.location='/register.html'"
+                           class="sky_button night_button col-12  m-lg-0  col-lg-5 ">fiction your own universe
+                   </button>
+               </div>
         </div>
         <div class="col-5 right_content">
             <div class="swiper mySwiper">
@@ -144,14 +144,7 @@
     </div>
 
 
-    <!-- <div class="row text-center ">
-      <div class="list-link" id="show_me">
-        <p class="h4">check dreams on versefiction</p>
-        <button class="cmb  text-white  ">
-          <img src="images/mouse.png" alt="">
-        </button>
-      </div>
-    </div> -->
+
 </div>
 <div class="list-page" id="list-page">
     <div class="container listing_div">
@@ -237,7 +230,7 @@
             <h4 class="text-white ml-5 mb-4">characters</h4>
             <div class="row pl-5 pr-5 row justify-content-lg-between justify-content-center">
                 <div class="character_wrapper">
-                <div class="card story_div   mb-4 pb-4" style="width: 20rem;">
+                <div class="card char_div   mb-4 pb-4" style="width: 20rem;">
                     <img class="p-3 pb-0 character_p  " src="images/character.png" alt="Card image cap">
                     <div class="card-body pl-5 pr-5 pt-0 pb-5">
                         <h5 class="card-title text-center mb-2">peter parker</h5>
@@ -251,7 +244,7 @@
                 </div>
             </div>
                 <div class="character_wrapper">
-                <div class="card story_div   mb-4 pb-4" style="width: 20rem;">
+                <div class="card char_div   mb-4 pb-4" style="width: 20rem;">
                     <img class="p-3 pb-0 character_p  " src="images/character.png" alt="Card image cap">
                     <div class="card-body pl-5 pr-5 pt-0 pb-5">
                         <h5 class="card-title text-center mb-2">peter parker</h5>
@@ -265,7 +258,7 @@
                 </div>
             </div>
                 <div class="character_wrapper">
-                <div class="card story_div   mb-4 pb-4" style="width: 20rem;">
+                <div class="card char_div   mb-4 pb-4" style="width: 20rem;">
                     <img class="p-3 pb-0 character_p  " src="images/character.png" alt="Card image cap">
                     <div class="card-body pl-5 pr-5 pt-0 pb-5">
                         <h5 class="card-title text-center mb-2">peter parker</h5>
@@ -285,14 +278,6 @@
         <div class="pt-5">
             <h4 class="text-white ml-5 mb-4">universes</h4>
             <div class="row pl-5 pr-5 row justify-content-lg-between justify-content-center">
-<!--                <div class="card universe_div   mb-4 pb-4 col-12" >-->
-<!--                    <div class="card-body ">-->
-<!--                        <div class="row">-->
-<!--                            <img src="images/universe.png" alt="">fsdfsdf-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-
                 <div class="card mb-3 col-12 universe_div pl-0 pr-0">
                     <div class="row g-0">
                         <div class="col-md-5">
@@ -312,6 +297,58 @@
         </div>
         </div>
 
+
+    </div>
+
+
+</div>
+
+
+
+<!-- modals -->
+<div class="modal fade " id="story_modal" tabindex="-1" role="dialog" aria-labelledby="story_modal" aria-hidden="true">
+    <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content story_modal">
+
+            <div class="modal-body p-0 border-0">
+                <div class=" row justify-content-center">
+                    <div class="card story_modal_card p-2" style="">
+                        <div class="row g-0">
+                            <div class="col-md-5 sm_img_div p-4 text-center" >
+                                <button type="button" class="close text-white" style="display: none" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <img src="images/story.png" class="img-fluid sm_img rounded-start" alt="...">
+                                <p class="card-text text-center text-muted">from <img class="ml-2 mr-2 mb-0" src="images/marvel_logo.png" alt=""> universe</p>
+                            </div>
+                            <div class="col-md-7 p-2" >
+                                <div class="card-body story_modal_body" >
+                                    <div class="text-sm-center text-center text-left s_title text-lg-center text-xl-center ">
+                                        <h5 class="card-title">spider-man homecoming</h5>
+                                        <span class="card-text reactions">
+                                        <i class="fa fa-eye mr-1"></i> 503k
+                                        <i class="fa fa-heart-o mr-1 ml-3"></i> 503k
+                                        <i class="fa fa-comment-o mr-1 ml-3"></i> 503k
+                                    </span>
+
+                                    </div>
+                                    <p class="card-text s_detail mt-4">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the .....
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    </p>
+                                    <button class="sky_button mt-5" >
+                                        start to read
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -332,7 +369,6 @@
     });
 </script>
 
-<script src="js/landing_page.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -342,6 +378,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="js/landing_page.js"></script>
+
+<script>
+
+    // $('#story_modal').modal('show')
+</script>
 </body>
 
 </html>
