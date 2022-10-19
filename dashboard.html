@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+          href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/635a21c716.js" crossorigin="anonymous"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>your works | dashboard</title>
+</head>
+
+
+<body>
+<nav>
+
+
+    <div class="sidebar active" id="side_bar">
+        <div class="side_main">
+            <span>accounts</span>
+            <button class="float-right" id="close_side_bar">
+                <i class="fa fa-close text-white"></i>
+            </button>
+        </div>
+        <a href="/login.html">login</a>
+        <a href="/register.html">signup</a>
+    </div>
+
+    <div class="topnav" id="top_nav">
+
+
+        <a href="/landing_page.html" class="active">
+            <img src="images/logo.png" width="200" alt="">
+        </a>
+
+
+<!--        <div class="right_side">-->
+<!--            <div class="form-inline" style="padding: 0 !important;">-->
+<!--                <input type="text" class="form-control input_nav" id="input_nav"-->
+<!--                       placeholder="&#xf002    find in versefiction">-->
+<!--                <a href="/login.html" class="dark_button mr-2" style=" border-color: #071217;">login</a>-->
+<!--                <a href="/register.html" class="dark_button"-->
+<!--                   style=" border-color: #071217; ">register</a>-->
+
+
+<!--            </div>-->
+<!--        </div>-->
+
+        <div class="right_side_mobile">
+            <button class=" btn dark_button_circle mr-2" data-toggle="modal" data-target="#search-modal-lg">
+                <i class="fa fa-search"></i>
+            </button>
+            <button class="btn dark_button_circle" id="accounts">
+                <i class="fa fa-user"></i>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="modal fade" id="search-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin: 0 !important; ">
+            <div class="modal-content" id="search-modal">
+                <div class="modal-header border-0">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control input_nav_search" id="input_nav_search"
+                           placeholder="&#xf002    find in versefiction">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="js/dashboard.js"></script>
+</body>
+
+</html>
