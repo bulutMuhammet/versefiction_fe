@@ -41,22 +41,49 @@
     <div class="topnav" id="top_nav">
 
 
-        <a href="/landing_page.html" class="active">
+        <a href="/landing_page.html" class="active dropdown-toggle">
             <img src="images/logo.png" width="200" alt="">
         </a>
+        <div class="links">
+            <a href="/landing_page.html">
+                universes
+            </a>
+            <a href="/landing_page.html">
+                stories
+            </a>
+            <a href="/landing_page.html">
+                characters
+            </a>
+            <a href="/landing_page.html">
+                entities
+            </a>
 
 
-<!--        <div class="right_side">-->
-<!--            <div class="form-inline" style="padding: 0 !important;">-->
-<!--                <input type="text" class="form-control input_nav" id="input_nav"-->
-<!--                       placeholder="&#xf002    find in versefiction">-->
-<!--                <a href="/login.html" class="dark_button mr-2" style=" border-color: #071217;">login</a>-->
-<!--                <a href="/register.html" class="dark_button"-->
-<!--                   style=" border-color: #071217; ">register</a>-->
+        </div>
 
 
-<!--            </div>-->
-<!--        </div>-->
+        <div class="right_side">
+            <div class="form-inline" style="padding: 0 !important;">
+                <input type="text" class="form-control input_nav " id="input_nav"
+                       placeholder="&#xf002    find in versefiction">
+                <button class="btn dark_button_circle md_search"  data-toggle="modal" data-target="#search-modal-lg">
+                    <i class="fa fa-search"></i>
+                </button>
+                <a href="/login.html" class="d_btn dark_button mr-2 " style=" border-color: #071217;">dashboard</a>
+                <button  class="dark_button p_btn dropdown-toggle" id="user_dropdown_btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                   style=" border-color: #071217;  ">
+                    <img src="images/profile_s.png" alt="" >
+                    <span class="ml-2">kanser</span>
+                </button>
+                <div class="dropdown-menu user_dropdown" aria-labelledby="user_dropdown_btn" >
+                    <a class="dropdown-item" href="#">profile</a>
+                    <a class="dropdown-item" href="#">inbox</a>
+                    <a class="dropdown-item" href="#">settings</a>
+                    <a class="dropdown-item" href="#">logout</a>
+                </div>
+
+            </div>
+        </div>
 
         <div class="right_side_mobile">
             <button class=" btn dark_button_circle mr-2" data-toggle="modal" data-target="#search-modal-lg">

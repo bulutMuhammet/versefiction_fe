@@ -5,7 +5,7 @@ body{
     background: #011A25;
 }
 .topnav {
-    overflow: hidden;
+    /*overflow: ;*/
     padding-top: 5px;
     padding-bottom: 5px;
     position: fixed;
@@ -18,8 +18,31 @@ body{
     background-attachment: fixed;
     background-position-x: right;
 
+
+}
+.topnav .links{
+    margin-top: 9px;
+    margin-left: 2rem;
+
 }
 
+#search_div{
+    padding: 0 !important;
+
+    margin-left: 10rem;
+
+    float: right;
+}
+
+#input_nav{
+    margin-right: 10rem;
+}
+
+.links a{
+    color: white !important;
+    text-decoration: none;
+    margin-left: 2rem;
+}
 .topnav .right_side {
     float: right;
     display: block;
@@ -70,10 +93,18 @@ body{
     border-color: transparent;
     color: #FFFFFF;
 }
+@media screen and (max-width: 886px) {
+
+    .topnav {
+        background: linear-gradient(89.96deg, #9E98D7 0.03% , #57BEEA 94.37% );
+        padding-bottom: 3px;
+        padding-top: 3px;
+    }
+}
 
 
 .dark_button {
-    border-radius: 10px;
+    border-radius: 190px;
     background: #071217;
     color: white;
     border-color: transparent;
@@ -113,6 +144,23 @@ body{
     outline: transparent !important;
 }
 
+.dark_button img{
+    border-radius: 180px;
+    width: 24px;
+}
+
+.p_btn{
+    padding-left: 15px !important;
+    padding-right: 10px !important;
+    cursor: pointer;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+.d_btn{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
 
 .dark_button_circle {
     border-radius: 80px;
@@ -125,6 +173,26 @@ body{
     padding: 10px 20px;
 
 }
+.md_search{
+    display: none;
+    margin-right: 5rem;
+}
+
+@media screen and (max-width: 1420px) {
+    .md_search{
+        display: block;
+    }
+    #input_nav{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1116px) {
+    .links{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 765px) {
     .right_side {
@@ -254,3 +322,18 @@ body{
     color: #FFFFFF;
 }
 
+.user_dropdown{
+    background: #071217 !important;
+    border-color: transparent;
+
+    padding: 10px 20px !important;
+}
+.user_dropdown a {
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+
+}
