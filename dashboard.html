@@ -41,9 +41,18 @@
     <div class="topnav" id="top_nav">
 
 
-        <a href="/landing_page.html" class="active dropdown-toggle">
+        <a href="/landing_page.html" class="active logo_desktop">
             <img src="images/logo.png" width="200" alt="">
         </a>
+        <a  class="active text-white dropdown-toggle logo_mobile" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="images/logo_notext.png" width="72" alt="">
+        </a>
+        <div class="dropdown-menu category_dropdown" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">universes</a>
+            <a class="dropdown-item" href="#">stories</a>
+            <a class="dropdown-item" href="#">characters</a>
+            <a class="dropdown-item" href="#">entities</a>
+        </div>
         <div class="links">
             <a href="/landing_page.html">
                 universes
@@ -89,6 +98,8 @@
             <button class=" btn dark_button_circle mr-2" data-toggle="modal" data-target="#search-modal-lg">
                 <i class="fa fa-search"></i>
             </button>
+            <button class=" btn dark_button_circle mr-2" data-toggle="modal" data-target="#search-modal-lg">
+                <i class="fa fa-book"></i>            </button>
             <button class="btn dark_button_circle" id="accounts">
                 <i class="fa fa-user"></i>
             </button>

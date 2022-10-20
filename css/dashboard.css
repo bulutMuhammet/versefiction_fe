@@ -100,6 +100,9 @@ body{
         padding-bottom: 3px;
         padding-top: 3px;
     }
+    #input_nav{
+        margin-right: 3rem;
+    }
 }
 
 
@@ -177,20 +180,41 @@ body{
     display: none;
     margin-right: 5rem;
 }
-
-@media screen and (max-width: 1420px) {
-    .md_search{
-        display: block;
-    }
-    #input_nav{
-        display: none;
-    }
-
+.logo_mobile{
+    display: none;
 }
-@media screen and (max-width: 1116px) {
+@media screen and (max-width: 1420px) {
+    /*.md_search{*/
+    /*    display: block;*/
+    /*}*/
+    /*#input_nav{*/
+    /*    display: none;*/
+    /*}*/
+
     .links{
         display: none;
     }
+    .logo_mobile{
+        display: block;
+    }
+    .logo_desktop{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1116px) {
+    /*.links{*/
+    /*    display: none;*/
+    /*}*/
+    /*.logo_mobile{*/
+    /*    display: block;*/
+    /*}*/
+    /*.logo_desktop{*/
+    /*    display: none;*/
+    /*}*/
+
 }
 
 
@@ -335,5 +359,28 @@ body{
     font-size: 13px;
     line-height: 15px;
     text-decoration: none;
+
+}
+
+.category_dropdown{
+    background: #071217 !important;
+    border-color: transparent;
+
+    padding: 10px 20px !important;
+}
+.category_dropdown a {
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+
+}
+
+#search-modal-lg .modal-dialog {
+    width: 100% !important;
+    /*margin-left: 10px;*/
+    max-width: none !important;
 
 }
