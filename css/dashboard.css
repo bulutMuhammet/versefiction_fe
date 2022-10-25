@@ -438,7 +438,9 @@ body{
     color: white;
 
 }
-
+.night{
+    background: #071217;
+}
 .universe_button {
     border-radius: 190px;
     color: white;
