@@ -56,7 +56,7 @@ body{
 
 }
 
-.topnav div, .active {
+.topnav div, .topnav .active {
     float: left;
     /* display: block; */
     color: #f2f2f2;
