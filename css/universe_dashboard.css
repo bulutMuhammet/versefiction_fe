@@ -32,6 +32,10 @@
     border-left: 1px solid #F9F9F9;
 
 }
+.u_mob_nav {
+    display: none;
+
+}
 .u_nav .active{
     background: #305F7B;
 }
@@ -159,6 +163,44 @@
 
     .story_date_info{
         bottom: 10px ;
+    }
+
+}
+@media screen and (max-width: 1460px) {
+
+    .left_bar{
+        display: none;
+    }
+    .right_bar{
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .right_bar .justify-content-center{
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+    }
+    .u_mob_nav{
+        display: flex;
+    }
+}@media screen and (max-width: 1200px) {
+
+    .story_list_div img{
+        width: 107%;
+        height: 200px;
+        padding: 2rem;
+        clip-path: none;
+        object-fit: cover;
+        border-radius: 3rem !important;
+
+    }
+    .story_list_div{
+        border-radius: 2rem;
+
+    }
+    .story_reactions{
+        position: static;
+
     }
 
 }
