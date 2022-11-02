@@ -183,7 +183,9 @@
     .u_mob_nav{
         display: flex;
     }
-}@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
 
     .story_list_div img{
         width: 107%;
@@ -202,5 +204,28 @@
         position: static;
 
     }
+    .story_date_info{
+        position: static;
+        margin-top: 1rem;
+    }
 
+}
+
+@media screen and (max-width: 1040px) {
+
+    .story_list_div img {
+        width: 108%;
+        height: 200px;
+        padding: 1.5rem;
+        clip-path: none;
+        object-fit: cover;
+        border-radius: 3rem !important;
+
+    }
+    .story_list_div h4{
+        font-size: 19px;
+    }
+    .story_list_div .story_reactions{
+        font-size: 15px;
+    }
 }
