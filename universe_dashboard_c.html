@@ -208,12 +208,12 @@
                 <h4 class="text-white mt-2 mob_title">marvel universe</h4>
 
                 <nav class="nav u_mob_sm_nav u_nav">
-                    <a class="nav-link radius_28  active border-0  text-white"
+                    <a class="nav-link radius_28 pl-4 pr-4 active border-0  text-white"
                        data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false"
                        aria-current="page" href="#">
-                        <i class="fa fa-book mr-2"></i>stories
-                        <i class="fa fa-caret-down ml-3"></i>
+                        <i class="fa fa-book mr-2"></i>characters
+                        <i class="fa fa-caret-down ml-1"></i>
                     </a>
 
                     <ul class="dropdown-menu filter_dropdown" aria-labelledby="dropdownMenu2">
@@ -241,10 +241,10 @@
 
                 </nav>
                   <nav class="nav u_mob_nav u_nav">
-                      <a class="nav-link u_nav_first active text-white" aria-current="page" href="#">
+                      <a class="nav-link u_nav_first  text-white" aria-current="page" href="#">
                           <i class="fa fa-book mr-2"></i>stories
                       </a>
-                      <a class="nav-link text-white" href="#">
+                      <a class="nav-link active text-white" href="#">
                           <i class="fa fa-users mr-2"></i>characters
                       </a>
                       <a class="nav-link  text-white" href="#">
@@ -254,10 +254,10 @@
                       </a>
                   </nav>
                 <nav class="nav u_nav">
-                    <a class="nav-link u_nav_first active text-white" aria-current="page" href="#">
+                    <a class="nav-link u_nav_first  text-white" aria-current="page" href="#">
                         <i class="fa fa-book mr-2"></i>stories
                     </a>
-                    <a class="nav-link text-white" href="#">
+                    <a class="nav-link active text-white" href="#">
                         <i class="fa fa-users mr-2"></i>characters
                     </a>
                     <a class="nav-link u_nav_last text-white" href="#">
@@ -266,8 +266,13 @@
                 </nav>
             </div>
             <div class="right_inside mt-4 text-white pl-5 p-4 pr-5">
-                <div class="row  filter_and_search  ">
-                    <div class="col-lg-8 col-md-12 text-md-center text-lg-left text-xl-left">
+                <div class="row  filter_and_search pb-4  ">
+                    <div class="col-lg-4 col-md-12 search_div_st_mb mb-3">
+                        <input type="text" class="form-control input_nav s_list_input float-lg-right"
+                               placeholder="&#xf002    find">
+
+                    </div>
+                    <div class="filter_div_lg col-lg-8 col-md-12 col-sm-12 col-xs-12 text-md-center text-sm-center text-lg-left text-xl-left">
                         <div class="btn-group ">
                             <button class="filter_button first active" aria-current="page">sort</button>
                             <button href="#" class="filter_button last " data-toggle="dropdown"
@@ -288,7 +293,7 @@
                             </ul>
                         </div>
                         <div class="btn-group ml-4">
-                            <button class="filter_button first active" aria-current="page">status</button>
+                            <button class="filter_button first active" aria-current="page">story</button>
                             <button href="#" class="filter_button last " data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                 all <i class="fa fa-caret-down float-right"></i>
@@ -307,79 +312,78 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12 ">
-                        <input type="text" class="form-control input_nav s_list_input float-right"
+                    <div class="filter_div_mb col-12 text-center ">
+                        <div class="btn-group ">
+                            <button href="#" class="filter_button radius_28 " data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                new <i class="fa fa-caret-down float-right ml-2"></i>
+                            </button>
+
+                            <ul class="dropdown-menu filter_dropdown" aria-labelledby="dropdownMenu2">
+                                <li>
+                                    <button class="dropdown-item" type="button">new</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">old</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">popular</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group ml-4">
+                            <button href="#" class="filter_button radius_28 " data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                all <i class="fa fa-caret-down float-right ml-3"></i>
+                            </button>
+
+                            <ul class="dropdown-menu filter_dropdown" aria-labelledby="dropdownMenu2">
+                                <li>
+                                    <button class="dropdown-item" type="button">all</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">active</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">passive</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 search_div_st_lg">
+                        <input type="text" class="form-control input_nav s_list_input float-lg-right"
                                placeholder="&#xf002    find">
 
                     </div>
+
                 </div>
 
 
-                <div class="row  mt-4 ml-2 justify-content-lg-center justify-content-md-center justify-content-sm-center">
-                    <div class="col-xl-12 col-lg-5 col-md-7 col-sm-9 mr-4 mt-4 row story_list_div">
-                        <div class="col-xl-3 col-lg-12 pl-0">
-                            <img src="images/story_img.png" alt="">
-                        </div>
-                        <div class="col-xl-5 col-lg-12   pt-xl-4 text-center text-xl-left">
-                            <h4>kaptan amerikanın seyir defteri</h4>
-                            <p>
-                                <span class="text-info">56</span> chapters <span class="text-success ml-4">8</span>
-                                draft
-                            </p>
-                            <div class="mb-0 story_reactions">
-                                <i class="fa fa-eye"></i> 503k
-                                <i class="fa fa-heart-o ml-4"></i> 206
-                                <i class="fa fa-comment-o ml-4"></i> 500
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-12   mt-lg-3   p-4  text-center text-xl-left">
-                            <div class="btn-group">
+                <div class=" stories_list">
+                    <div class="row   mt-4 ml-2 justify-content-around">
+                        <div class="col-xl-3 col-lg-5 mr-3 mb-4  char_list_div text-center">
+                            <a href="#" class="char_settings"><i class="fa fa-ellipsis-h fa-2xl text-white"></i></a>
 
-                                <a href="#" class="story_button first active text-center"
-                                   aria-current="page">continue</a>
-                                <a href="#" class="story_button last ">
-                                    <i class="fa fa-cog"></i>
-                                </a>
+                            <img src="images/character.png" alt="">
+                            <h4 class="mt-2">peter parker</h4>
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry specimen book. It has survived not only...</p>
+                        </div>
+                        <div class="col-xl-3 col-lg-5 mr-3 mb-4  char_list_div text-center">
+                            <a href="#" class="char_settings"><i class="fa fa-ellipsis-h fa-2xl text-white"></i></a>
 
-                                <!--                                  <a href="#" class="story_button bg-transparent"><i class="fa fa-share-alt fa-xl"></i></a>-->
-                            </div>
-                            <div class="mb-0 story_date_info ">
-                                <span class="text-muted">last update: june 13, 2021 07:25PM</span>
-                            </div>
+                            <img src="images/character.png" alt="">
+                            <h4 class="mt-2">peter parker</h4>
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry specimen book. It has survived not only...</p>
                         </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-5 col-md-7 col-sm-9 mr-4 mt-4 row story_list_div">
-                        <div class="col-xl-3 col-lg-12 pl-0">
-                            <img src="images/story_img.png" alt="">
-                        </div>
-                        <div class="col-xl-5 col-lg-12   pt-xl-4 text-center text-xl-left">
-                            <h4>kaptan amerikanın seyir defteri</h4>
-                            <p>
-                                <span class="text-info">56</span> chapters <span class="text-success ml-4">8</span>
-                                draft
-                            </p>
-                            <div class="mb-0 story_reactions">
-                                <i class="fa fa-eye"></i> 503k
-                                <i class="fa fa-heart-o ml-4"></i> 206
-                                <i class="fa fa-comment-o ml-4"></i> 500
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-12   mt-lg-3   p-4  text-center text-xl-left">
-                            <div class="btn-group">
+                        <div class="col-xl-3 col-lg-5 mr-3 mb-4  char_list_div text-center">
+                            <a href="#" class="char_settings"><i class="fa fa-ellipsis-h fa-2xl text-white"></i></a>
 
-                                <a href="#" class="story_button first active text-center"
-                                   aria-current="page">continue</a>
-                                <a href="#" class="story_button last ">
-                                    <i class="fa fa-cog"></i>
-                                </a>
-
-                                <!--                                  <a href="#" class="story_button bg-transparent"><i class="fa fa-share-alt fa-xl"></i></a>-->
-                            </div>
-                            <div class="mb-0 story_date_info ">
-                                <span class="text-muted">last update: june 13, 2021 07:25PM</span>
-                            </div>
+                            <img src="images/character.png" alt="">
+                            <h4 class="mt-2">peter parker</h4>
+                            <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry specimen book. It has survived not only...</p>
                         </div>
-                    </div>
+
+                   </div>
                 </div>
             </div>
         </div>
