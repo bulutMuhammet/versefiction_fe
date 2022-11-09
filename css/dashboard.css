@@ -93,11 +93,7 @@ body{
     border-color: transparent;
     color: #FFFFFF;
 }
-@media screen and (max-width: 990px) {
-    .s_list_input{
-        width: 80% !important;
-    }
-}
+
 @media screen and (max-width: 886px) {
 
     .topnav {

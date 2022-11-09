@@ -52,6 +52,7 @@
 .right_inside{
     background: #07212D;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .filter_button {
@@ -281,6 +282,86 @@
     }
     .u_mob_sm_nav{
         display: flex;
+
     }
 
+}
+.search_div_st_mb{
+    display: none;
+}
+@media screen and (max-width: 990px) {
+    .s_list_input{
+        width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search_div_st_lg{
+        display: none;
+    }
+    .search_div_st_mb{
+        display: flex;
+    }
+}
+
+.filter_div_mb{
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    .filter_div_lg{
+        display: none;
+    }
+    .filter_div_mb{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 574px) {
+    .s_list_input{
+        width: 90% !important;
+
+    }
+
+}
+.stories_list{
+    height: 38rem !important;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y:scroll;
+}
+
+.char_list_div{
+    background: #071217;
+    padding:2rem;
+    position: relative;
+    border-radius: 28px;
+}
+
+.char_list_div img{
+    width: 90px;
+    border-radius: 200px;
+    margin-top: 0 !important;
+}
+.char_settings {
+    position: absolute !important;
+    right: 30px;
+
+}
+.ent_list_div{
+    background: #071217;
+    padding:1rem;
+    position: relative;
+    border-radius: 28px;
+
+}
+
+.ent_list_div img{
+    width: 100%;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    margin-bottom: 1rem;
+}
+.ent_settings{
+    position: absolute !important;
+    right: 0px;
+    bottom: 0px
 }
