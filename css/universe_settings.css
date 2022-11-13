@@ -1,0 +1,68 @@
+.title_line {
+    background: linear-gradient(89.96deg, #57BEEA 0.03%, #9E98D7 94.37%);
+    height: 5px;
+}
+
+.edit_form label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+
+}
+
+.edit_u_inp {
+    background: rgba(125, 170, 224, 0.31);
+    border-radius: 30px;
+    border-color: transparent;
+}
+
+.edit_u_inp:focus {
+    background: rgba(125, 170, 224, 0.31);
+    border-color: transparent;
+    color: #FFFFFF;
+
+}
+
+.edit_u_inp:not(:placeholder-shown) {
+    background: rgba(125, 170, 224, 0.31);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.edit_form textarea{
+    border-radius: 10px !important;
+}
+
+.edit_form textarea::-webkit-resizer {
+    display: none;
+}
+
+.edit_form .cover_banner{
+    width: 100% !important;
+    height: 240px;
+    object-fit: cover;
+
+}
+.cover_div{
+    position: relative;
+}
+.change_cover{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.lang_select option {
+
+    background: #2C4B64; !important;
+
+}
+
+.lang_select{
+    text-indent: 25px !important;
+
+}
