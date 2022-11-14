@@ -10,7 +10,6 @@
     font-size: 19px;
     line-height: 26px;
 
-    color: #FFFFFF;
 
 }
 
@@ -18,8 +17,11 @@
     background: rgba(125, 170, 224, 0.31);
     border-radius: 30px;
     border-color: transparent;
-}
 
+}
+input, textarea, select{
+    color: #d7f6ed !important;
+}
 .edit_u_inp:focus {
     background: rgba(125, 170, 224, 0.31);
     border-color: transparent;
@@ -59,10 +61,135 @@
 .lang_select option {
 
     background: #2C4B64; !important;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 5rem !important;
+}
+
+.lang_select {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+.team_edit{
+    background: #071217;
+    border-radius: 30px;
+    position: relative;
+}
+
+.team_edit img{
+    border-radius: 100%;
+    width: 65px;
 
 }
 
-.lang_select{
-    text-indent: 25px !important;
+.team_member{
+    background: #0A171D;
+    -ms-flex: 0 0 18.666667%;
+    flex: 0 0 18.666667%;
+    max-width: 18.666667%;
+    position: relative;
+}
+.team_member button{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 0.5rem !important;
+    background: #9F98D6;
+}
+
+.add_member{
+
+    position: absolute;
+
+    right: 9px;
+    padding: 0.5rem !important;
+}
+
+#edit_member .modal-content{
+    background: #27475F;
+    border-radius: 26px;
+
+}
+
+#edit_member .modal_chr_img{
+    width: 38px;
+}
+
+#edit_member .k_im{
+    width: 20px;
+}
+
+#edit_member .story_button{
+    padding: 0.5rem !important;
+}
+
+#edit_member select{
+    background: rgba(125, 170, 224, 0.31);
+    border-color: transparent;
+    padding: 0.3rem;
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+    cursor: pointer;
+
+}
+
+#edit_member option{
+    background: #2C4B64; !important;
+    padding-left: 0.9rem !important;
+    padding-right: 0.9rem !important;
+}
+
+
+#edit_member select {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+#edit_member .modal-body{
+    background: #0E171C;
+    border-radius: 37px;
+}
+
+#add_member .modal-content{
+    background: #27475F;
+    border-radius: 26px;
+
+}
+
+#add_member .modal-body{
+    background: #071217;
+    border-radius: 37px;
+}
+
+
+
+#add_member input {
+    background: #071217;
+    border-radius: 76px;
+    border-color: transparent;
+    font-family: Ubuntu, FontAwesome;
+    text-align: center;
+}
+
+#add_member input:focus {
+    background: #071217;
+    border-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+
+}
+#add_member input:hover{
+    outline: none;
+
+}
+#add_member input:not(:placeholder-shown) {
+    background: #071217;
+    border-color: transparent;
+    color: #FFFFFF;
+    outline: none;
 
 }

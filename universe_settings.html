@@ -277,11 +277,11 @@
                         <div class="edit_form mt-5">
                             <form action="">
                                 <label for="name" class="label">name</label>
-                                <input type="text" id="name" class="form-control input edit_u_inp"
+                                <input type="text" id="name" value="Marvel Universe" class="form-control input edit_u_inp"
                                        placeholder="andromeda and milkyway not allowed (those are galaxies idiot)">
 
                                 <label for="detail" class="label mt-4">detail</label>
-                                <textarea type="text" id="detail" class="form-control input edit_u_inp"></textarea>
+                                <textarea rows="6" type="text" id="detail" class="form-control text-left input edit_u_inp"></textarea>
 
                                 <label class="label mt-4">cover</label>
                                 <div class="text-center cover_div">
@@ -315,8 +315,8 @@
                                 </div>
 
                                 <label for="language" class="label mt-4">language</label>
-                                <select id="language" class="form-select edit_u_inp lang_select p-2 form-control form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option   selected>Open this select menu</option>
+                                <select id="language" class="form-select text-center edit_u_inp lang_select form-control form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option    disabled selected hidden style="color:red !important;">select language</option>
                                     <option value="1">turkish</option>
                                     <option value="2">english</option>
                                     <option value="3">french</option>
@@ -326,6 +326,79 @@
                                     <option value="3">chinese</option>
                                 </select>
 
+
+                                <label for="team" class="label mt-4">team</label>
+                                <p class="text-muted">choose who you want to authorize on your work</p>
+                                <div class="team_edit col-12 p-2 pb-3 pl-5" id="team">
+                                    <div class="row">
+                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-2 mb-2">
+                                            <button type="button"  class="story_button radius_28" data-toggle="modal" data-target="#edit_member"><i class="fa fa-edit  text-white"></i></button>
+                                            <img src="images/character.png" class="mb-3" alt=""><br>
+                                            <span class="text-muted ">you</span>
+                                        </div>
+
+                                        <div class="modal" id="edit_member" tabindex="-1" role="dialog"  aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content " >
+                                                    <div class="modal-header border-0">
+                                                        <h5 class="modal-title" >edit team member</h5>
+
+                                                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body ml-4 mr-4">
+                                                        <img src="images/character.png" class="modal_chr_img" alt="">
+                                                        <span class="ml-3">Steve Ditko</span>
+
+                                                       <div class="float-right">
+                                                           <select class="form-select radius_28 text-center" >
+                                                               <option value="1">author</option>
+                                                               <option value="2">moderator</option>
+                                                           </select>
+                                                           <button type="button"  class="story_button radius_28 ml-2">
+                                                               <img src="images/kick.svg" class="k_im">
+                                                           </button>
+                                                       </div>
+
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+<!--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                                                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <button type="button" class="story_button radius_28  add_member" data-toggle="modal" data-target="#add_member"><i
+                                                class="fa fa-user-plus"></i></button>
+
+
+                                        <div class="modal" id="add_member" tabindex="-1" role="dialog"  aria-hidden="true">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                                <div class="modal-content " >
+                                                    <div class="modal-header border-0">
+                                                        <input type="text" placeholder="&#xf002    find" class="col-12">
+                                                    </div>
+                                                    <div class="modal-body ml-3 mr-3">
+
+
+                                                    </div>
+                                                    <div class="modal-footer border-0">
+                                                        <!--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                                                        <!--                                                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                </div>
                             </form>
                         </div>
 
@@ -352,7 +425,9 @@
 <script src="js/dashboard.js"></script>
 <script src="js/cropper/cropper.js"></script>
 <script src="js/universe_settings.js"></script>
+<script>
 
+</script>
 </body>
 
 </html>
