@@ -270,7 +270,7 @@
             </div>
             <div class="right_inside mt-4 text-white pl-5 p-4 pr-5">
                 <div class="row justify-content-center p-5">
-                    <div class="col-7">
+                    <div class="col-xl-7 col-12">
                         <h3>edit your universe</h3>
                         <div class="title_line"></div>
 
@@ -285,33 +285,24 @@
 
                                 <label class="label mt-4">cover</label>
                                 <div class="text-center cover_div">
-                                    <img class="cover_banner" src="images/universe.png" alt="">
-                                    <button type="button" class="story_button radius_28  change_cover" data-target="#modal" data-toggle="modal"><i
-                                            class="fa fa-pen"></i></button>
-                                    <div class="modal fade" id="modal" tabindex="-1" role="dialog"
-                                         aria-labelledby="modalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="modalLabel">Cropper</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="img-container">
-                                                        <img id="image" src="images/universe.png" alt="Picture">
-                                                    </div>
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                            data-dismiss="modal">Close
-                                                    </button>
-                                                </div>
-                                            </div>
+                                    <img class="cover_banner" src="images/ucov.png" alt="" id="universe_image">
+                                    <div class="change_cover">
+                                        <button type="button" class="story_button radius_28" id="crop_button"><i
+                                                class="fa fa-pen"></i></button>
+
+                                        <div id="edit_buttons">
+                                            <input type="file" id="upload" hidden>
+                                            <button type="button" class="story_button radius_28 edit_color" id="c_upload" ><i
+                                                    class="fa fa-file-image-o"></i></button>
+                                            <button type="button" class="story_button radius_28 ok_color" ><i
+                                                    class="fa fa-check"></i></button>
+                                            <button type="button" class="story_button radius_28 cancel_color" id="c_cancel" >
+                                                <i class="fa fa-close"></i>
+                                            </button>
                                         </div>
                                     </div>
+
+
                                 </div>
 
                                 <label for="language" class="label mt-4">language</label>
@@ -331,7 +322,12 @@
                                 <p class="text-muted">choose who you want to authorize on your work</p>
                                 <div class="team_edit col-12 p-2 pb-3 pl-5" id="team">
                                     <div class="row">
-                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-2 mb-2">
+                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
+                                            <button type="button"  class="story_button radius_28" data-toggle="modal" data-target="#edit_member"><i class="fa fa-edit  text-white"></i></button>
+                                            <img src="images/character.png" class="mb-3" alt=""><br>
+                                            <span class="text-muted ">you</span>
+                                        </div>
+                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
                                             <button type="button"  class="story_button radius_28" data-toggle="modal" data-target="#edit_member"><i class="fa fa-edit  text-white"></i></button>
                                             <img src="images/character.png" class="mb-3" alt=""><br>
                                             <span class="text-muted ">you</span>
@@ -375,19 +371,68 @@
                                                 class="fa fa-user-plus"></i></button>
 
 
-                                        <div class="modal" id="add_member" tabindex="-1" role="dialog"  aria-hidden="true">
-                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                        <div class="modal fade" id="add_member" tabindex="-1" role="dialog"  aria-hidden="true">
+                                            <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
                                                 <div class="modal-content " >
                                                     <div class="modal-header border-0">
                                                         <input type="text" placeholder="&#xf002    find" class="col-12">
                                                     </div>
-                                                    <div class="modal-body ml-3 mr-3">
-
+                                                    <div class="modal-body ml-3 mr-3 p-4 ">
+                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
+                                                            <img src="images/character.png" alt="">
+                                                            <span class="ml-3 h5">steve ditko</span>
+                                                            <div class="float-right mt-1">
+                                                                <select class="form-select p-1 radius_28 text-center" >
+                                                                    <option value="1">author</option>
+                                                                    <option value="2">moderator</option>
+                                                                </select>
+                                                                <button type="button"  class="story_button radius_28 ml-2">
+                                                                    invite
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
+                                                            <img src="images/character.png" alt="">
+                                                            <span class="ml-3 h5">steve ditko</span>
+                                                            <div class="float-right mt-1">
+                                                                <select class="form-select p-1 radius_28 text-center" >
+                                                                    <option value="1">author</option>
+                                                                    <option value="2">moderator</option>
+                                                                </select>
+                                                                <button type="button"  class="story_button radius_28 ml-2">
+                                                                    invite
+                                                                </button>
+                                                            </div>
+                                                        </div> <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
+                                                            <img src="images/character.png" alt="">
+                                                            <span class="ml-3 h5">steve ditko</span>
+                                                            <div class="float-right mt-1">
+                                                                <select class="form-select p-1 radius_28 text-center" >
+                                                                    <option value="1">author</option>
+                                                                    <option value="2">moderator</option>
+                                                                </select>
+                                                                <button type="button"  class="story_button radius_28 ml-2">
+                                                                    invite
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
+                                                            <img src="images/character.png" alt="">
+                                                            <span class="ml-3 h5">steve ditko</span>
+                                                            <div class="float-right mt-1">
+                                                                <select class="form-select p-1 radius_28 text-center" >
+                                                                    <option value="1">author</option>
+                                                                    <option value="2">moderator</option>
+                                                                </select>
+                                                                <button type="button"  class="story_button radius_28 ml-2">
+                                                                    invite
+                                                                </button>
+                                                            </div>
+                                                        </div>
 
                                                     </div>
-                                                    <div class="modal-footer border-0">
-                                                        <!--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-                                                        <!--                                                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                                                    <div class="modal-footer border-0 text-center justify-content-center">
+                                                        <a type="button" class="btn-link text-center" data-dismiss="modal">nevermind</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -399,6 +444,17 @@
 
                                     </div>
                                 </div>
+
+                                <div class="text-center mt-4 form_save ">
+                                    <button type="button"  class="story_button radius_28 text-center">
+                                        save
+                                    </button>
+                                    <br>
+                                    <button type="button"  class="story_button radius_28 text-center mt-2 form_c">
+                                        cancel
+                                    </button>
+                                </div>
+
                             </form>
                         </div>
 

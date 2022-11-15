@@ -163,6 +163,7 @@ input, textarea, select{
 #add_member .modal-body{
     background: #071217;
     border-radius: 37px;
+
 }
 
 
@@ -191,5 +192,86 @@ input, textarea, select{
     border-color: transparent;
     color: #FFFFFF;
     outline: none;
+
+}
+
+.add_u_div{
+    background: #0E171C;
+    border-radius: 37px;
+}
+
+.add_u_div img{
+    width: 40px;
+}
+
+.add_u_div select {
+    background: #305F7B;
+    border-radius: 76px;
+    border-color: transparent;
+    font-family: Ubuntu, FontAwesome;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add_u_div  select:focus {
+    background: #305F7B;
+    border-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+
+}
+.add_u_div select:hover{
+    outline: none;
+
+}
+.add_u_div select:not(:placeholder-shown) {
+    background: #305F7B;
+    border-color: transparent;
+    color: #FFFFFF;
+    outline: none;
+
+}
+
+#add_member .modal-lg{
+    max-width: 600px;
+}
+
+.form_save button{
+    width: 11rem !important;
+}
+
+.form_c {
+    background: transparent !important;
+    border: 2px solid black;
+    border-color: #73AFE2 !important;
+
+
+}
+.form_c:hover{
+    background: #73AFE2 !important;
+
+}
+
+.cancel_color{
+    background: #E95872 !important;
+}
+
+.edit_color{
+    background: #9F98D6;
+}
+
+.ok_color{
+    background: #44D744;
+}
+
+#edit_buttons{
+    display: none;
+}
+
+@media screen and (max-width: 1603px) {
+    .team_edit img{
+        width: 50px;
+
+    }
 
 }
