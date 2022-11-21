@@ -365,3 +365,58 @@
     right: 0px;
     bottom: 0px
 }
+
+.empty_content{
+    text-align: center;
+    /*position: absolute;*/
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+}
+.empty_content img{
+    width: 35%;
+    /*width: 450px;*/
+}
+.green{
+    background: #44D744 !important;
+
+}
+.cancel_color{
+    background: #E95872 !important;
+}
+
+.edit_color{
+    background: #9F98D6 !important;
+}
+.back{
+    background: #07212D !important;
+    /*background: #73AFE2 !important;*/
+
+}
+.radius_full{
+    border-radius: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .empty_content img{
+        width: 50% !important;
+
+    }
+
+}
+@media screen and (max-width: 593px) {
+    .empty_content img{
+        width: 70% !important;
+
+    }
+
+
+}@media screen and (max-width: 427px) {
+    .empty_content h4{
+        /*font-size: 20px;*/
+    }
+
+
+}
+.thing_button{
+    padding: 3rem !important;
+}

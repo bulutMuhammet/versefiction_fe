@@ -88,9 +88,9 @@ input, textarea, select{
 
 .team_member{
     background: #0A171D;
-    -ms-flex: 0 0 18.666667%;
-    flex: 0 0 18.666667%;
-    max-width: 18.666667%;
+    -ms-flex: 0 0 20.666667%;
+    flex: 0 0 20.666667%;
+    max-width: 20.666667%;
     position: relative;
 }
 .team_member .edit_member_lg{
@@ -100,12 +100,45 @@ input, textarea, select{
     padding: 0.5rem !important;
     background: #9F98D6;
 }
+@media screen and (max-width: 1773px) {
+        .inner_right_content{
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+}@media screen and (max-width: 1505px) {
+        .inner_right_content{
+            -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
+            max-width: 85%;
+        }
+}@media screen and (max-width: 1460px) {
+        .inner_right_content{
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+}@media screen and (max-width: 1331px) {
+        .inner_right_content{
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+}@media screen and (max-width: 1000px) {
+        .inner_right_content{
+            -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+            max-width: 90%;
+        }
+}
+
 
 .add_member_lg{
 
     position: absolute;
 
-    right: 9px;
+    right: -9px;
+    top: -9px;
     padding: 0.5rem !important;
 }
 
@@ -258,13 +291,15 @@ input, textarea, select{
 }
 
 .edit_color{
-    background: #9F98D6;
+    background: #9F98D6 !important;
 }
 
 .ok_color{
     background: #44D744;
 }
-
+.modal_chr_img{
+    border-radius: 100%;
+}
 #edit_buttons{
     display: none;
 }
@@ -281,7 +316,8 @@ input, textarea, select{
 
     }
 
-}@media screen and (max-width: 880px) {
+}
+@media screen and (max-width: 869px) {
     .team_edit .e-im{
         width: 35px;
 
@@ -289,8 +325,14 @@ input, textarea, select{
     .edit_member_lg .fa-edit {
         font-size: 15px;
     }
+    .inner_right_content{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
-}@media screen and (max-width: 808px) {
+}
+@media screen and (max-width: 869px) {
     .team_member{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -365,12 +407,15 @@ input, textarea, select{
 
     }
     .add_u_div .float-right{
-        margin-top: 0 !important;
+        margin-top: 2px !important;
     }
     #add_member .modal-body{
         background: transparent;
         padding: 0px !important;
     }
-
+    .edit_member_mb{
+        padding: 0.4rem 0.9rem !important;
+        font-size: 15px;
+    }
 
 }
