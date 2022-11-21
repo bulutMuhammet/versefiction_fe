@@ -1,0 +1,236 @@
+.title_line {
+    background: linear-gradient(89.96deg, #57BEEA 0.03%, #9E98D7 94.37%);
+    height: 5px;
+}
+
+.edit_form label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 26px;
+    margin-bottom: 1.1rem !important;
+
+
+}
+
+.edit_u_inp {
+    background: rgba(125, 170, 224, 0.31);
+    border-radius: 30px;
+    border-color: transparent;
+
+}
+input, textarea, select{
+    color: #d7f6ed !important;
+}
+.edit_u_inp:focus {
+    background: rgba(125, 170, 224, 0.31);
+    border-color: transparent;
+    color: #FFFFFF;
+
+}
+
+.edit_u_inp:not(:placeholder-shown) {
+    background: rgba(125, 170, 224, 0.31);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.edit_form textarea{
+    border-radius: 10px !important;
+}
+
+.edit_form textarea::-webkit-resizer {
+    display: none;
+}
+
+.edit_form .cover_banner{
+    width: 100% !important;
+    height: auto;
+
+    object-fit: cover;
+
+}
+.cover_div{
+    position: relative;
+}
+.change_cover{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.lang_select option {
+
+    background: #2C4B64; !important;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 5rem !important;
+}
+
+.lang_select {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+
+
+
+.team_member{
+    background: #0A171D;
+    -ms-flex: 0 0 20.666667%;
+    flex: 0 0 20.666667%;
+    max-width: 20.666667%;
+    position: relative;
+}
+.team_member .edit_member_lg{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 0.5rem !important;
+    background: #9F98D6;
+}
+@media screen and (max-width: 1773px) {
+    .inner_right_content{
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}@media screen and (max-width: 1505px) {
+    .inner_right_content{
+        -ms-flex: 0 0 85%;
+        flex: 0 0 85%;
+        max-width: 85%;
+    }
+}@media screen and (max-width: 1460px) {
+    .inner_right_content{
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}@media screen and (max-width: 1331px) {
+    .inner_right_content{
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}@media screen and (max-width: 1000px) {
+    .inner_right_content{
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+}
+
+
+
+.form_save button{
+    width: 11rem !important;
+}
+
+.form_c {
+    background: transparent !important;
+    border: 2px solid black;
+    border-color: #73AFE2 !important;
+
+
+}
+.form_c:hover{
+    background: #73AFE2 !important;
+
+}
+
+.cancel_color{
+    background: #E95872 !important;
+}
+
+.edit_color{
+    background: #9F98D6 !important;
+}
+
+.ok_color{
+    background: #44D744;
+}
+.modal_chr_img{
+    border-radius: 100%;
+}
+#edit_buttons{
+    display: none;
+}
+.edit_member_mb{
+    position: absolute;
+    right: 5%;
+    margin-top: 0.4rem;
+    display: none;
+
+}
+@media screen and (max-width: 1603px) {
+    .team_edit .e-im{
+        width: 50px;
+
+    }
+
+}
+@media screen and (max-width: 869px) {
+    .team_edit .e-im{
+        width: 35px;
+
+    }
+    .edit_member_lg .fa-edit {
+        font-size: 15px;
+    }
+    .inner_right_content{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+.onoffswitch {
+    position: relative; width: 95px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 38px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 37px; padding: 0; line-height: 37px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "open";
+    padding-left: 10px;
+    background-color: #44D744; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "close";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 23px; margin: 7px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 54px;
+    border: 2px solid #999999; border-radius: 38px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

@@ -1,0 +1,328 @@
+.left_info{
+    background: #07212D;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.left_info .story_cover{
+    width: 100% !important;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+.left_info img{
+    width: 100%;
+}
+.radius_circle{
+    border-radius: 500px;
+}
+.info_team img{
+    width: 40px;
+}
+
+
+
+    .page_content .row{
+        margin-left: 0 !important;
+    }
+    .left_info{
+        margin-left: 1rem !important;
+    }
+
+
+
+.u_nav a{
+    background: #092938;
+    padding: 0.5rem 2rem;
+    border-left: 1px solid #F9F9F9;
+
+}
+.u_mob_nav {
+    display: none;
+
+}
+.u_nav .active{
+    background: #305F7B;
+}
+.u_nav_first{
+    border-radius: 47px 0px 0px 47px;
+    border-left: none !important;
+
+}
+
+.u_nav_last{
+    border-radius: 0px 47px 47px 0px;
+}
+
+.right_inside{
+    background: #07212D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+
+
+
+.story_button {
+    background: #73AFE2;
+    color: white;
+    border-color: transparent;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 10px 20px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    transition: 0.2s;
+}
+
+.story_button:focus {
+    outline: transparent !important;
+}
+.story_button:hover{
+    background: #5783ab;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.story_button.last{
+    border-left: 4px solid #071217 ;
+    border-radius: 0 30px 30px 0;
+
+}
+.mob_title{
+    display: none;
+}
+
+
+.u_mob_sm_nav{
+    display: none;
+}
+
+@media screen and (max-width: 1460px) {
+
+    .left_bar{
+        display: none;
+    }
+    .right_bar{
+        -ms-flex: 0 0 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    .right_bar .justify-content-center{
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+    }
+    .u_nav{
+        display: none;
+    }
+    .u_mob_nav{
+        display: flex;
+    }
+    .mob_title{
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .right_inside{
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+
+
+    }
+
+}
+@media screen and (max-width: 1240px) {
+    .u_mob_nav{
+        display: none;
+
+
+    }
+    .u_mob_sm_nav{
+        display: flex;
+
+    }
+
+}
+
+.green{
+    background: #44D744 !important;
+
+}
+.cancel_color{
+    background: #E95872 !important;
+}
+
+.edit_color{
+    background: #9F98D6 !important;
+}
+.back{
+    background: #07212D !important;
+    /*background: #73AFE2 !important;*/
+
+}
+.radius_full{
+    border-radius: 100%;
+}
+
+
+.blank{
+    background: transparent;
+    box-shadow: none;
+    padding: 0!important;
+}
+.title_line {
+    background: linear-gradient(89.96deg, #57BEEA 0.03%, #9E98D7 94.37%);
+    height: 5px;
+}
+
+.right_inside{
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+}
+
+.story-list{
+    /*margin-left: 8rem !important;*/
+    /*margin-right: 3rem !important;*/
+}
+.story_element{
+    background: #092735;
+    position: relative;
+    border-bottom: 3px solid #061c25;
+}
+.story_element a, a:hover, a:active, a:visited { color: white; }
+.story_element a{
+    position: absolute;
+    top: 20%;
+}
+.story_reactions{
+    position: absolute;
+    top: 20%;
+}
+
+@media screen and (max-width: 1875px) {
+    .left_bar .h4{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 1550px) {
+    .left_bar .h4{
+        font-size: 17px;
+    }
+    .left_bar .h5 {
+        font-size: 14px;
+
+    }
+}
+
+.story_reactions_sm{
+    display: none;
+}
+.st_edits_sm{
+    display: none;
+}
+@media screen and (max-width: 1515px) {
+    .right_inside{
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+}@media screen and (max-width: 1200px) {
+    .sr_lg{
+        display: none;
+    }
+    .st_edits{
+        display: none;
+    }
+    .story_reactions_sm{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 0.6rem !important;
+    }
+    .story_element h5{
+        font-size: 16px !important;
+    }
+    .st_info{
+        font-size: 12px;
+    }
+    .story_element a{
+        top: 34%;
+
+    }
+    .story_element a i{
+        font-size: 16px !important;
+
+    }
+    .story_element{
+        /*padding: 1rem 1rem !important;*/
+        padding-left: 0.2rem !important;
+        padding-right: 0.3rem !important;
+    }
+    .right_inside{
+        padding-right: 2rem !important;
+        padding-left: 1.2rem !important;
+    }
+    .st_edits_sm{
+        display: block;
+
+        position: absolute;
+        top: 39%;
+        right: 30px;
+    }
+}
+.new_ch_sm{
+    display: none;
+}
+@media screen and (max-width: 850px) {
+    .right_inside {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    .mob_title{
+        font-size: 20px;
+    }
+    .u_mob_sm_nav a{
+        padding-right: 0.9rem !important;
+        padding-left: 1.2rem !important;
+    }
+}@media screen and (max-width: 620px) {
+
+    .mob_title{
+        font-size: 17px;
+    }
+
+}
+@media screen and (max-width: 545px) {
+    .new_ch{
+        display: none;
+    }
+    .new_ch_sm{
+        display: flex;
+    }
+    .right_inside {
+        padding-left: 1rem !important;
+        padding-right: 2rem !important;
+    }
+    .label_sm_nav{
+        display: none;
+
+    }
+    .sm_nav_caret{
+        margin-left: 0 !important;
+    }
+    .u_mob_sm_nav a{
+        font-size: 12px !important;
+        padding: 0.7rem 0.8rem !important;
+    }
+    .tab_title{
+        margin-top: 0.5rem;
+        font-size: 20px !important;
+    }
+}
