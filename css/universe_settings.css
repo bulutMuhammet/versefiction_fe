@@ -92,7 +92,7 @@ input, textarea, select{
     max-width: 18.666667%;
     position: relative;
 }
-.team_member button{
+.team_member .edit_member_lg{
     position: absolute;
     right: -10px;
     top: -10px;
@@ -100,7 +100,7 @@ input, textarea, select{
     background: #9F98D6;
 }
 
-.add_member{
+.add_member_lg{
 
     position: absolute;
 
@@ -154,13 +154,13 @@ input, textarea, select{
     border-radius: 37px;
 }
 
-#add_member .modal-content{
+#add_member_lg .modal-content{
     background: #27475F;
     border-radius: 26px;
 
 }
 
-#add_member .modal-body{
+#add_member_lg .modal-body{
     background: #071217;
     border-radius: 37px;
 
@@ -168,7 +168,7 @@ input, textarea, select{
 
 
 
-#add_member input {
+#add_member_lg input {
     background: #071217;
     border-radius: 76px;
     border-color: transparent;
@@ -176,18 +176,18 @@ input, textarea, select{
     text-align: center;
 }
 
-#add_member input:focus {
+#add_member_lg input:focus {
     background: #071217;
     border-color: transparent;
     color: #FFFFFF;
     outline: none;
 
 }
-#add_member input:hover{
+#add_member_lg input:hover{
     outline: none;
 
 }
-#add_member input:not(:placeholder-shown) {
+#add_member_lg input:not(:placeholder-shown) {
     background: #071217;
     border-color: transparent;
     color: #FFFFFF;
@@ -232,7 +232,7 @@ input, textarea, select{
 
 }
 
-#add_member .modal-lg{
+#add_member_lg .modal-lg{
     max-width: 600px;
 }
 
@@ -267,11 +267,62 @@ input, textarea, select{
 #edit_buttons{
     display: none;
 }
+.edit_member_mb{
+    position: absolute;
+    right: 5%;
+    margin-top: 0.4rem;
+    display: none;
 
+}
 @media screen and (max-width: 1603px) {
     .team_edit img{
         width: 50px;
 
     }
 
+}@media screen and (max-width: 880px) {
+    .team_edit img{
+        width: 35px;
+
+    }
+    .edit_member_lg .fa-edit {
+        font-size: 15px;
+    }
+
+}@media screen and (max-width: 808px) {
+    .team_member{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+
+        display: flex;
+    }
+    .edit_member_lg{
+        display: none;
+    }
+    .add_member_lg{
+        display: none;
+    }
+    .team_edit img{
+        width: 45px;
+        margin-bottom: 0 !important;
+
+    }
+    .team_member span{
+        margin-top: 0.7rem;
+        margin-left: 10%;
+
+    }
+    #team{
+        padding-left: 1rem !important;
+        padding-right: 1.8rem !important;
+    }
+    .edit_member_mb{
+        display: block;
+    }
+    #edit_member select{
+        padding: 0.3rem!important;
+    }
 }
+

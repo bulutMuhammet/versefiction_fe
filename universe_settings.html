@@ -269,7 +269,7 @@
                 </nav>
             </div>
             <div class="right_inside mt-4 text-white pl-5 p-4 pr-5">
-                <div class="row justify-content-center p-5">
+                <div class="row justify-content-center p-xl-5 pr-2 ">
                     <div class="col-xl-7 col-12">
                         <h3>edit your universe</h3>
                         <div class="title_line"></div>
@@ -322,15 +322,14 @@
                                 <p class="text-muted">choose who you want to authorize on your work</p>
                                 <div class="team_edit col-12 p-2 pb-3 pl-5" id="team">
                                     <div class="row">
-                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
-                                            <button type="button"  class="story_button radius_28" data-toggle="modal" data-target="#edit_member"><i class="fa fa-edit  text-white"></i></button>
+                                        <div class="p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
+                                            <button type="button"  class="story_button radius_28 edit_member_lg" data-toggle="modal" data-target="#edit_member">
+                                                <i class="fa fa-edit  text-white"></i>
+                                            </button>
                                             <img src="images/character.png" class="mb-3" alt=""><br>
-                                            <span class="text-muted ">you</span>
-                                        </div>
-                                        <div class=" p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
-                                            <button type="button"  class="story_button radius_28" data-toggle="modal" data-target="#edit_member"><i class="fa fa-edit  text-white"></i></button>
-                                            <img src="images/character.png" class="mb-3" alt=""><br>
-                                            <span class="text-muted ">you</span>
+                                            <span class="text-muted">you</span>
+
+                                            <button type="button" class="story_button radius_28 edit_member_mb edit_color" data-toggle="modal" data-target="#edit_member">edit</button>
                                         </div>
 
                                         <div class="modal" id="edit_member" tabindex="-1" role="dialog"  aria-hidden="true">
@@ -343,31 +342,30 @@
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
-                                                    <div class="modal-body ml-4 mr-4">
+                                                    <div class="modal-body ml-4 mr-4  ">
                                                         <img src="images/character.png" class="modal_chr_img" alt="">
-                                                        <span class="ml-3">Steve Ditko</span>
+                                                        <span class="ml-3 ml-xs-0">Steve Ditko</span>
 
-                                                       <div class="float-right">
-                                                           <select class="form-select radius_28 text-center" >
-                                                               <option value="1">author</option>
-                                                               <option value="2">moderator</option>
-                                                           </select>
-                                                           <button type="button"  class="story_button radius_28 ml-2">
-                                                               <img src="images/kick.svg" class="k_im">
-                                                           </button>
-                                                       </div>
+                                                        <div class="float-right">
+                                                            <select class="form-select radius_28 text-center" >
+                                                                <option value="1">author</option>
+                                                                <option value="2">moderator</option>
+                                                            </select>
+                                                            <button type="button"  class="story_button radius_28 ml-2">
+                                                                <img src="images/kick.svg" class="k_im">
+                                                            </button>
+                                                        </div>
 
                                                     </div>
                                                     <div class="modal-footer border-0">
-<!--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-<!--                                                        <button type="button" class="btn btn-primary">Save changes</button>-->
+                                                        <!--                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                                                        <!--                                                        <button type="button" class="btn btn-primary">Save changes</button>-->
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-
-                                        <button type="button" class="story_button radius_28  add_member" data-toggle="modal" data-target="#add_member"><i
+                                        <button type="button" class="story_button radius_28  add_member_lg" data-toggle="modal" data-target="#add_member"><i
                                                 class="fa fa-user-plus"></i></button>
 
 
