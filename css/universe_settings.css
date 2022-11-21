@@ -45,7 +45,8 @@ input, textarea, select{
 
 .edit_form .cover_banner{
     width: 100% !important;
-    height: 240px;
+    height: auto;
+
     object-fit: cover;
 
 }
@@ -79,7 +80,7 @@ input, textarea, select{
     position: relative;
 }
 
-.team_edit img{
+.team_edit .e-im{
     border-radius: 100%;
     width: 65px;
 
@@ -154,21 +155,21 @@ input, textarea, select{
     border-radius: 37px;
 }
 
-#add_member_lg .modal-content{
+#add_member .modal-content{
     background: #27475F;
     border-radius: 26px;
 
 }
 
-#add_member_lg .modal-body{
+#add_member .modal-body{
     background: #071217;
     border-radius: 37px;
-
+    transition: 0.2s;
 }
 
 
 
-#add_member_lg input {
+#add_member input {
     background: #071217;
     border-radius: 76px;
     border-color: transparent;
@@ -176,18 +177,18 @@ input, textarea, select{
     text-align: center;
 }
 
-#add_member_lg input:focus {
+#add_member input:focus {
     background: #071217;
     border-color: transparent;
     color: #FFFFFF;
     outline: none;
 
 }
-#add_member_lg input:hover{
+#add_member input:hover{
     outline: none;
 
 }
-#add_member_lg input:not(:placeholder-shown) {
+#add_member input:not(:placeholder-shown) {
     background: #071217;
     border-color: transparent;
     color: #FFFFFF;
@@ -232,7 +233,7 @@ input, textarea, select{
 
 }
 
-#add_member_lg .modal-lg{
+#add_member .modal-lg{
     max-width: 600px;
 }
 
@@ -275,13 +276,13 @@ input, textarea, select{
 
 }
 @media screen and (max-width: 1603px) {
-    .team_edit img{
+    .team_edit .e-im{
         width: 50px;
 
     }
 
 }@media screen and (max-width: 880px) {
-    .team_edit img{
+    .team_edit .e-im{
         width: 35px;
 
     }
@@ -298,19 +299,18 @@ input, textarea, select{
 
         display: flex;
     }
+
     .edit_member_lg{
         display: none;
     }
-    .add_member_lg{
-        display: none;
-    }
-    .team_edit img{
+
+    .team_edit .e-im{
         width: 45px;
         margin-bottom: 0 !important;
 
     }
-    .team_member span{
-        margin-top: 0.7rem;
+    .team_member .tm-name{
+        /*margin-top: 0.7rem;*/
         margin-left: 10%;
 
     }
@@ -323,6 +323,54 @@ input, textarea, select{
     }
     #edit_member select{
         padding: 0.3rem!important;
+        font-size: 13px;
     }
-}
+    #edit_member .k_im{
+        /*width: 16px;*/
+    }
+    #edit_member span{
+        font-size: 13px;
+    }
+    .add_member_lg{
+        right: -7px;
+        top: -13px;
+    }
 
+}
+.inv_sm{
+    display: none;
+}
+.add_u_div img{
+    border-radius: 100%;
+}
+@media screen and (max-width: 575px) {
+    .inv_lg{
+        display: none;
+    }
+    .inv_sm{
+        display: inline;
+        padding: 0.3rem 0.5rem !important;
+
+        font-size: 10px;
+    }
+    .add_u_div img{
+        width: 30px;
+    }
+    .add_u_div span{
+        font-size: 13px;
+    }
+    .add_u_div select{
+        font-size: 13px;
+        padding: 0.2rem !important;
+
+    }
+    .add_u_div .float-right{
+        margin-top: 0 !important;
+    }
+    #add_member .modal-body{
+        background: transparent;
+        padding: 0px !important;
+    }
+
+
+}

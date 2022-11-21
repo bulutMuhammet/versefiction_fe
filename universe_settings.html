@@ -269,7 +269,7 @@
                 </nav>
             </div>
             <div class="right_inside mt-4 text-white pl-5 p-4 pr-5">
-                <div class="row justify-content-center p-xl-5 pr-2 ">
+                <div class="row justify-content-md-center p-xl-5 pr-2 ">
                     <div class="col-xl-7 col-12">
                         <h3>edit your universe</h3>
                         <div class="title_line"></div>
@@ -277,11 +277,13 @@
                         <div class="edit_form mt-5">
                             <form action="">
                                 <label for="name" class="label">name</label>
-                                <input type="text" id="name" value="Marvel Universe" class="form-control input edit_u_inp"
+                                <input type="text" id="name" value="Marvel Universe"
+                                       class="form-control input edit_u_inp"
                                        placeholder="andromeda and milkyway not allowed (those are galaxies idiot)">
 
                                 <label for="detail" class="label mt-4">detail</label>
-                                <textarea rows="6" type="text" id="detail" class="form-control text-left input edit_u_inp"></textarea>
+                                <textarea rows="6" type="text" id="detail"
+                                          class="form-control text-left input edit_u_inp"></textarea>
 
                                 <label class="label mt-4">cover</label>
                                 <div class="text-center cover_div">
@@ -292,11 +294,13 @@
 
                                         <div id="edit_buttons">
                                             <input type="file" id="upload" hidden>
-                                            <button type="button" class="story_button radius_28 edit_color" id="c_upload" ><i
+                                            <button type="button" class="story_button radius_28 edit_color"
+                                                    id="c_upload"><i
                                                     class="fa fa-file-image-o"></i></button>
-                                            <button type="button" class="story_button radius_28 ok_color" ><i
+                                            <button type="button" class="story_button radius_28 ok_color"><i
                                                     class="fa fa-check"></i></button>
-                                            <button type="button" class="story_button radius_28 cancel_color" id="c_cancel" >
+                                            <button type="button" class="story_button radius_28 cancel_color"
+                                                    id="c_cancel">
                                                 <i class="fa fa-close"></i>
                                             </button>
                                         </div>
@@ -306,8 +310,11 @@
                                 </div>
 
                                 <label for="language" class="label mt-4">language</label>
-                                <select id="language" class="form-select text-center edit_u_inp lang_select form-control form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option    disabled selected hidden style="color:red !important;">select language</option>
+                                <select id="language"
+                                        class="form-select text-center edit_u_inp lang_select form-control form-select-lg mb-3"
+                                        aria-label=".form-select-lg example">
+                                    <option disabled selected hidden style="color:red !important;">select language
+                                    </option>
                                     <option value="1">turkish</option>
                                     <option value="2">english</option>
                                     <option value="3">french</option>
@@ -323,35 +330,50 @@
                                 <div class="team_edit col-12 p-2 pb-3 pl-5" id="team">
                                     <div class="row">
                                         <div class="p-3  text-center radius_28 team_member mr-3 mt-3 mb-2">
-                                            <button type="button"  class="story_button radius_28 edit_member_lg" data-toggle="modal" data-target="#edit_member">
+                                            <button type="button" class="story_button radius_28 edit_member_lg"
+                                                    data-toggle="modal" data-target="#edit_member">
                                                 <i class="fa fa-edit  text-white"></i>
                                             </button>
-                                            <img src="images/character.png" class="mb-3" alt=""><br>
-                                            <span class="text-muted">you</span>
+                                            <img src="images/character.png"  class="mb-3 e-im" alt=""><br>
 
-                                            <button type="button" class="story_button radius_28 edit_member_mb edit_color" data-toggle="modal" data-target="#edit_member">edit</button>
+                                                <span class="text-white tm-name">
+                                                    Steve Ditko
+                                                    <br>
+                                                <small class="text-muted">moderator</small>
+
+                                                </span>
+
+
+                                            <button type="button"
+                                                    class="story_button radius_28 edit_member_mb edit_color"
+                                                    data-toggle="modal" data-target="#edit_member">edit
+                                            </button>
                                         </div>
 
-                                        <div class="modal" id="edit_member" tabindex="-1" role="dialog"  aria-hidden="true">
+                                        <div class="modal" id="edit_member" tabindex="-1" role="dialog"
+                                             aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content " >
+                                                <div class="modal-content ">
                                                     <div class="modal-header border-0">
-                                                        <h5 class="modal-title" >edit team member</h5>
+                                                        <h5 class="modal-title">edit team member</h5>
 
-                                                        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
+                                                        <button type="button" class="close text-white"
+                                                                data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">
+                                                                <i class="fa fa-close"></i>
+                                                            </span>
                                                         </button>
                                                     </div>
-                                                    <div class="modal-body ml-4 mr-4  ">
+                                                    <div class="modal-body ml-xl-4 mr-xl-4 mr-2 ml-2 ">
                                                         <img src="images/character.png" class="modal_chr_img" alt="">
                                                         <span class="ml-3 ml-xs-0">Steve Ditko</span>
 
                                                         <div class="float-right">
-                                                            <select class="form-select radius_28 text-center" >
+                                                            <select class="form-select radius_28 text-center">
                                                                 <option value="1">author</option>
                                                                 <option value="2">moderator</option>
                                                             </select>
-                                                            <button type="button"  class="story_button radius_28 ml-2">
+                                                            <button type="button" class="story_button radius_28 ml-2">
                                                                 <img src="images/kick.svg" class="k_im">
                                                             </button>
                                                         </div>
@@ -365,90 +387,57 @@
                                             </div>
                                         </div>
 
-                                        <button type="button" class="story_button radius_28  add_member_lg" data-toggle="modal" data-target="#add_member"><i
+                                        <button type="button" class="story_button radius_28  add_member_lg"
+                                                data-toggle="modal" data-target="#add_member"><i
                                                 class="fa fa-user-plus"></i></button>
 
 
-                                        <div class="modal fade" id="add_member" tabindex="-1" role="dialog"  aria-hidden="true">
+                                        <div class="modal fade" id="add_member" tabindex="-1" role="dialog"
+                                             aria-hidden="true">
                                             <div class="modal-dialog  modal-lg modal-dialog-centered" role="document">
-                                                <div class="modal-content " >
+                                                <div class="modal-content ">
                                                     <div class="modal-header border-0">
                                                         <input type="text" placeholder="&#xf002    find" class="col-12">
                                                     </div>
-                                                    <div class="modal-body ml-3 mr-3 p-4 ">
-                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
+                                                    <div class="modal-body ml-3 mr-3 p-4  ">
+                                                        <div class="col-12 p-2 pl-4  pr-4 add_u_div mb-3">
+
                                                             <img src="images/character.png" alt="">
                                                             <span class="ml-3 h5">steve ditko</span>
-                                                            <div class="float-right mt-1">
-                                                                <select class="form-select p-1 radius_28 text-center" >
+                                                            <div class="float-right text-center mt-1">
+                                                                <select class="form-select p-1 radius_28 text-center">
                                                                     <option value="1">author</option>
                                                                     <option value="2">moderator</option>
                                                                 </select>
-                                                                <button type="button"  class="story_button radius_28 ml-2">
+                                                                <button type="button"
+                                                                        class="story_button inv_lg radius_28 ml-2">
                                                                     invite
                                                                 </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
-                                                            <img src="images/character.png" alt="">
-                                                            <span class="ml-3 h5">steve ditko</span>
-                                                            <div class="float-right mt-1">
-                                                                <select class="form-select p-1 radius_28 text-center" >
-                                                                    <option value="1">author</option>
-                                                                    <option value="2">moderator</option>
-                                                                </select>
-                                                                <button type="button"  class="story_button radius_28 ml-2">
-                                                                    invite
-                                                                </button>
-                                                            </div>
-                                                        </div> <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
-                                                            <img src="images/character.png" alt="">
-                                                            <span class="ml-3 h5">steve ditko</span>
-                                                            <div class="float-right mt-1">
-                                                                <select class="form-select p-1 radius_28 text-center" >
-                                                                    <option value="1">author</option>
-                                                                    <option value="2">moderator</option>
-                                                                </select>
-                                                                <button type="button"  class="story_button radius_28 ml-2">
-                                                                    invite
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 p-2 pl-4 pr-4 add_u_div mb-3">
-                                                            <img src="images/character.png" alt="">
-                                                            <span class="ml-3 h5">steve ditko</span>
-                                                            <div class="float-right mt-1">
-                                                                <select class="form-select p-1 radius_28 text-center" >
-                                                                    <option value="1">author</option>
-                                                                    <option value="2">moderator</option>
-                                                                </select>
-                                                                <button type="button"  class="story_button radius_28 ml-2">
-                                                                    invite
+                                                                <button type="button"
+                                                                        class="story_button inv_sm radius_28 ml-2">
+                                                                    <i class="fa fa-check"></i>
                                                                 </button>
                                                             </div>
                                                         </div>
 
                                                     </div>
-                                                    <div class="modal-footer border-0 text-center justify-content-center">
-                                                        <a type="button" class="btn-link text-center" data-dismiss="modal">nevermind</a>
+                                                    <div class="modal-footer border-0 " style="justify-content: center !important;">
+                                                        <a type="button" class="btn-link text-center"
+                                                           data-dismiss="modal">nevermind</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
 
-
-
-
-
                                     </div>
                                 </div>
 
                                 <div class="text-center mt-4 form_save ">
-                                    <button type="button"  class="story_button radius_28 text-center">
+                                    <button type="button" class="story_button radius_28 text-center">
                                         save
                                     </button>
                                     <br>
-                                    <button type="button"  class="story_button radius_28 text-center mt-2 form_c">
+                                    <button type="button" class="story_button radius_28 text-center mt-2 form_c">
                                         cancel
                                     </button>
                                 </div>
