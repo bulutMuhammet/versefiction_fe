@@ -309,19 +309,75 @@
 
                                 <label for="detail" class="label mt-4">what categories does your story fall into?</label>
                                 <div class="content">
-                                    <p class="text-muted">Press enter or add a comma after each tag. <span id="remain_tag">10</span> tags are remaining</p>
-                                    <ul id="tags_ul">
-                                        <input class="form-control   tags_inp  mt-2" id="tags_inp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                               placeholder="select tags for your story"
+                                    <p class="text-muted">Press enter or add a comma after each tag.
+                                        <style>
+
+                                            @keyframes vibrate-3 {
+                                                0% {
+                                                    -webkit-transform: translate(0);
+                                                    transform: translate(0);
+                                                }
+                                                10% {
+                                                    -webkit-transform: translate(-2px, -2px);
+                                                    transform: translate(-2px, -2px);
+                                                }
+                                                20% {
+                                                    -webkit-transform: translate(2px, -2px);
+                                                    transform: translate(2px, -2px);
+                                                }
+                                                30% {
+                                                    -webkit-transform: translate(-2px, 2px);
+                                                    transform: translate(-2px, 2px);
+                                                }
+                                                40% {
+                                                    -webkit-transform: translate(2px, 2px);
+                                                    transform: translate(2px, 2px);
+                                                }
+                                                50% {
+                                                    -webkit-transform: translate(-2px, -2px);
+                                                    transform: translate(-2px, -2px);
+                                                }
+                                                60% {
+                                                    -webkit-transform: translate(2px, -2px);
+                                                    transform: translate(2px, -2px);
+                                                }
+                                                70% {
+                                                    -webkit-transform: translate(-2px, 2px);
+                                                    transform: translate(-2px, 2px);
+                                                }
+                                                80% {
+                                                    -webkit-transform: translate(-2px, -2px);
+                                                    transform: translate(-2px, -2px);
+                                                }
+                                                90% {
+                                                    -webkit-transform: translate(2px, -2px);
+                                                    transform: translate(2px, -2px);
+                                                }
+                                                100% {
+                                                    -webkit-transform: translate(0);
+                                                    transform: translate(0);
+                                                }
+                                            }
+                                            .vibrate-3 {
+                                                -webkit-animation: vibrate-3 0.2s infinite both;
+                                                animation: vibrate-3 0.2s infinite both;
+                                            }
+                                        </style>f
+                                    <div id="remain_warn"><span id="remain_tag" class="text-success vibrate-3">10</span> tags are remaining</div></p>
+                                    <ul id="tags_ul" class="not_close">
+                                        <input class="form-control  tags_inp  mt-2" id="tags_inp"
+                                               placeholder="select tags for your  story"
                                                type="text" spellcheck="false">
-                                        <div class="dropdown-menu" aria-labelledby="tags_inp">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
+
                                     </ul>
                                 </div>
+                                <div id="tags_list_div" class="tags_list border-dark ghost p-2 pt-3  not_close">
+                                    <div class="row not_close pl-2 pr-2 pb-2 " id="tags_list_row">
 
+                                        <div id="no_match" class="text-center w-100 ghost">we don't have any matching tags</div>
+
+                                    </div>
+                                </div>
 
 
                                 <label class="label mt-4">cover</label>
@@ -415,12 +471,59 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+<style>
+    @keyframes vibrate-3 {
+        0% {
+            -webkit-transform: translate(0);
+            transform: translate(0);
+        }
+        10% {
+            -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+        }
+        20% {
+            -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+        }
+        30% {
+            -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+        }
+        40% {
+            -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+        }
+        50% {
+            -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+        }
+        60% {
+            -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+        }
+        70% {
+            -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+        }
+        80% {
+            -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+        }
+        90% {
+            -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+        }
+        100% {
+            -webkit-transform: translate(0);
+            transform: translate(0);
+        }
+    }
+</style>
 <script src="js/multi-input/multi-input.js"></script>
 <script src="js/dashboard.js"></script>
 <script src="js/cropper/cropper.js"></script>
 <script src="js/universe_settings.js"></script>
-<script src="js/multi-input/multi-input.js"></script>
+<!--<script src="js/multi-input/multi-input.js"></script>-->
 
 
 </body>
