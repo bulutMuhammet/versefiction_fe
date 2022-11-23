@@ -50,7 +50,18 @@
     border-left: none !important;
 
 }
+.filter_dropdown{
+    background: #22485F !important;
+    border-color: transparent;
 
+    /*padding: 10px 20px !important;*/
+}
+.filter_dropdown li button {
+
+    color: white;
+
+
+}
 .u_nav_last{
     border-radius: 0px 47px 47px 0px;
 }
