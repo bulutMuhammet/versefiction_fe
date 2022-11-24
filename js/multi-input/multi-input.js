@@ -4,38 +4,53 @@ tags_ul = document.querySelector("#tags_ul"),
 tags_list_div = document.querySelector("#tags_list_div");
 tags_list_row = document.querySelector("#tags_list_row");
 remain_warn = document.querySelector("#remain_warn");
-
+var paragraph = document.querySelector("#paragraph")
 var maxTags = 3,
     tags = [];
 
 
-var tags_list = ["drama", "fantasy", "fairy tale", "historical"]
-// var tags_list_in_div = ["drama", "fantasy", "fairy tale", "historical"]
+
+var tags_list = ["drama", "fantasy", "fairy tale", "historical",
+                "romance", "action", "sci-fi", "horror", "mystery", "adventure",
+                "random", "poem", "voltage", "humour", "vampire","classics"]
+
+
 var colors = ["#A9D2F5", "#B9B4E1", "#fff"]
 
 countTags();
 createTag();
 
-function startList(tag_list){
+function startList(tag_list) {
     tags_list_row.innerHTML = "<div id=\"no_match\" class=\"text-center w-100 ghost\">we don't have any matching tags</div>\n"
     tag_list.forEach(tag => {
-        tags_list_row.innerHTML += `<div class="col-auto p-1 mr-2 tags_list_el not_close" onclick="addTagClick(this)">
+        tags_list_row.innerHTML += `<div class="col-auto p-1 mr-2 mt-2 tags_list_el not_close" onclick="addTagClick(this)">
                                             ${tag}
                                         </div>`
     })
 }
+
 startList(tags_list)
-function countTags() {
+
+function countTags(trigger = false) {
     // input.focus();
     var count = maxTags - tags.length
-    if(count == 0){
-        tagNumb.classList.add("text-danger")
-        remain_warn.style.animation="vibrate-3 0.2s linear both;"
-        console.log(remain_warn)
-    }else{
-        tagNumb.classList.remove("text-danger")
+    var color = "success"
+    if (count == 0) {
+        color = "danger"
     }
-    tagNumb.innerText = maxTags - tags.length;
+
+    var animation = ""
+    if (trigger) {
+        animation = "vibrate-3"
+    }
+
+    paragraph.innerHTML = `Press enter or add a comma after each tag.
+                           <span id="remain_warn" style="display:inline-block;" class="${animation}" >
+                           <span id="remain_tag" class="text-${color}">${count}</span> 
+                           tags are remaining
+                           </span>`
+
+
 }
 
 function getRandomColor() {
@@ -72,11 +87,10 @@ function remove(element, tag) {
 }
 
 
-
 function addTag(e) {
 
     let tag = e.target.value.replace(/\s+/g, ' ');
-    var li,  i, txtValue;
+    var li, i, txtValue;
     li = document.getElementsByClassName("tags_list_el");
 
     for (i = 0; i < li.length; i++) {
@@ -91,13 +105,22 @@ function addTag(e) {
         }
 
     }
-    // var get_nones = doc
-
+    //
+    if (tags.length != 3 && e.key == "Enter") {
+        for (i = 0; i < li.length; i++) {
+            if (li[i].textContent.trim() === tag) {
+                li[i].remove()
+            }
+        }
+    }
     if (e.key == "Enter") {
         if (tag.length > 1 && !tags.includes(tag) && tags_list.includes(tag)) {
             if (tags.length < 3) {
-                    tags.push(tag.trim());
-                    createTag();
+
+                tags.push(tag.trim());
+                createTag();
+            } else {
+                countTags(true)
             }
         }
         e.target.value = "";
@@ -107,23 +130,18 @@ function addTag(e) {
             li[i].classList.add("tag_visible")
 
         }
-        for (i = 0; i < li.length; i++) {
-            if (li[i].textContent.trim() === tag) {
-                li[i].remove()
-            }
-        }
+
     }
     var visible_tags = document.getElementsByClassName("tag_visible")
     var no_match = document.getElementById("no_match")
-    if(visible_tags.length == 0){
-        console.log(visible_tags.length)
+    if (visible_tags.length == 0) {
         no_match.classList.remove("ghost")
-    }else{
+    } else {
         no_match.classList.add("ghost")
     }
 }
 
-function addTagClick(e){
+function addTagClick(e) {
     var content = e.textContent
 
     if (!tags.includes(content)) {
@@ -139,10 +157,12 @@ function addTagClick(e){
 
             }
             e.remove()
+        } else {
+            countTags(true)
         }
     }
 
-    if(tags_list_row.children.length == 0){
+    if (tags_list_row.children.length == 0) {
         tags_ul.classList.remove("tags_ul_no_radius")
         tags_list_div.classList.add("ghost")
     }
@@ -150,17 +170,17 @@ function addTagClick(e){
 }
 
 
-document.addEventListener("mousedown",function (e) {
+document.addEventListener("mousedown", function (e) {
 
     var clicky = e.target;
-    if(!clicky.classList.contains("not_close")){
+    if (!clicky.classList.contains("not_close")) {
         tags_ul.classList.remove("tags_ul_no_radius")
         tags_list_div.classList.add("ghost")
     }
 });
 
 input.addEventListener('focus', (event) => {
-    if(tags_list_row.children.length != 0){
+    if (tags_list_row.children.length != 0) {
         tags_ul.classList.add("tags_ul_no_radius")
         tags_list_div.classList.remove("ghost")
     }
