@@ -1,0 +1,79 @@
+.team_panel{
+    border-radius: 30px;
+    background: #2C4C64;
+    height: 80% !important;
+
+
+}
+.right_inside{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+.tp_right{
+    background: #061014;
+    border-radius: 20px;
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+
+.tp_left{
+    background: #061014;
+    border-radius: 20px;
+    height: 553px;
+    /*max-height: 100%;*/
+    overflow: hidden;
+}
+
+.tp_el{
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    background: #0E171C;
+    border-radius: 23px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tp_el img{
+    width: 45px;
+    border-radius: 100%;
+}
+
+.tp_el .el_line_text{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+
+}
+
+.list_el{
+    background: #0E171C;
+    border-radius: 11px;
+
+}
+.list_el img{
+    width: 50px;
+    border-radius: 100%;
+}
+.list_el button{
+    padding: 0.3rem 0.9rem !important;
+    margin-top: 11px;
+}
+
+.tp_el_selected{
+    background: #192831;
+    border: 1px solid #2a80b2;
+
+}
+
+#delete_button{
+    padding: 0.2rem 1rem !important;
+    /*transition: 0.2s;*/
+    display: none
+}
+.active_button{
+    visibility: visible !important;
+    /*transition: 0.2s;*/
+    display: block !important;
+}
