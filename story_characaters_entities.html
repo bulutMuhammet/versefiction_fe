@@ -286,77 +286,31 @@
                  style="height: 94%; padding-bottom: 150px !important;">
                 <h4>who/what is in this story</h4>
                 <span class="text-muted">drag and drop. it's that simple (and fun) </span>
-                <div class="row mt-4 team_panel">
+                <div class="text-center mt-4 mb-2">
+                    <button id="mobile_add" class="story_button sky radius_28" style="font-size: 14px">add character/entity</button>
+                </div>
+
+                <div class="row  team_panel">
                     <div class="col-12 p-3 ">
-                        <div class="row mr-1 " style="height: 100%" >
-                            <div class="col-4 tp_left_o" >
+                        <div class="row mr-1 " style="height: 100%">
+                            <div class="col-4 tp_left_o">
                                 <input type="text" class="form-control input_nav_search"
                                        placeholder="&#xf002    find in versefiction">
-                                <div class="mt-2 p-3 tp_left">
-                                    <div class="row justify-content-center pt-2" id="tp_left_list" style="margin-right: 0.8rem;">
+                                <div class="mt-2  p-3 tp_left">
+                                    <div class="row justify-content-center pt-2" id="tp_left_list"
+                                         style="margin-right: 0.8rem;">
 
 
-                                        <div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row">
-                                        <div class="col-2">
-                                            <img class="float-left" src="images/character.png" alt="">
-                                        </div>
-                                        <div class="col ml-3">
-                                            <span>peter parker</span>
-                                            <small class="text-muted">character</small>
-                                        </div>
-                                        <div class="col">
-                                            <button class="story_button green radius_28 float-right"
-                                                    onclick="addElementToRight(this)">
-                                                add
-                                            </button>
-                                        </div>
-
-
-                                    </div>
-                                        <div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row">
+                                        <div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row justify-content-end">
                                             <div class="col-2">
                                                 <img class="float-left" src="images/character.png" alt="">
                                             </div>
-                                            <div class="col ml-3">
-                                                <span>peter parker</span>
+                                            <div class="col-6 ml-3">
+                                                <span>peter parker</span> <br>
                                                 <small class="text-muted">character</small>
                                             </div>
-                                            <div class="col">
-                                                <button class="story_button green radius_28 float-right"
-                                                        onclick="addElementToRight(this)">
-                                                    add
-                                                </button>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row">
-                                            <div class="col-2">
-                                                <img class="float-left" src="images/character.png" alt="">
-                                            </div>
-                                            <div class="col ml-3">
-                                                <span>peter parker</span>
-                                                <small class="text-muted">character</small>
-                                            </div>
-                                            <div class="col">
-                                                <button class="story_button green radius_28 float-right"
-                                                        onclick="addElementToRight(this)">
-                                                    add
-                                                </button>
-                                            </div>
-
-
-                                        </div>
-                                        <div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row">
-                                            <div class="col-2">
-                                                <img class="float-left" src="images/character.png" alt="">
-                                            </div>
-                                            <div class="col ml-3">
-                                                <span>peter parker</span>
-                                                <small class="text-muted">character</small>
-                                            </div>
-                                            <div class="col">
-                                                <button class="story_button green radius_28 float-right"
+                                            <div class="col-3 float-right">
+                                                <button class="story_button green radius_28 float-right ml-3"
                                                         onclick="addElementToRight(this)">
                                                     add
                                                 </button>
@@ -371,38 +325,47 @@
                             </div>
                             <div class="col-8 tp_right pt-3 text-center">
                                 <div>
-                                    <span class="text-muted">sort characters/entities according to their importance in the story</span>
-                                    <button class="story_button float-right cancel_color radius_28 " id="delete_button" onclick="removeElements(this)" >remove</button>
+                                    <span class="text-muted" id="sort_help">sort characters/entities according to their importance in the story</span>
+                                    <button class="story_button float-right cancel_color radius_28 " id="delete_button">
+                                        remove
+                                    </button>
                                 </div>
-                                <div id="team_sort" class="row  mr-1 justify-content-center mt-3">
-                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
-                                        <span class="el_line_text avd">#1</span>
-                                        <img src="images/character.png" class="avd" alt=""> <br>
-                                        <span class="avd">peter parker</span> <br>
-                                        <small class="text-muted avd">character</small>
-                                    </div>
-                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
-                                        <span class="el_line_text avd">#1</span>
-                                        <img src="images/character.png" class="avd" alt=""> <br>
-                                        <span class="avd">peter parker</span> <br>
-                                        <small class="text-muted avd">character</small>
-                                    </div><div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
-                                        <span class="el_line_text avd">#1</span>
-                                        <img src="images/character.png" class="avd" alt=""> <br>
-                                        <span class="avd">peter parker</span> <br>
-                                        <small class="text-muted avd">character</small>
-                                    </div><div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
-                                        <span class="el_line_text avd">#1</span>
-                                        <img src="images/character.png" class="avd" alt=""> <br>
-                                        <span class="avd">peter parker</span> <br>
-                                        <small class="text-muted avd">character</small>
-                                    </div><div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
-                                        <span class="el_line_text avd">#1</span>
-                                        <img src="images/character.png" class="avd" alt=""> <br>
-                                        <span class="avd">peter parker</span> <br>
-                                        <small class="text-muted avd">character</small>
-                                    </div>
+                                <div id="team_sort"
+                                     class="row  mr-1 justify-content-xl-center justify-content-md-center
+                                     justify-content-lg-center
+                                     justify-content-sm-center
 
+                                     mt-3">
+                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
+                                        <span class="el_line_text avd">#1</span>
+                                        <img src="images/character.png" class="avd" alt=""> <br>
+                                        <span class="avd">peter parker</span> <br>
+                                        <small class="text-muted avd">character</small>
+                                    </div>
+                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
+                                        <span class="el_line_text avd">#1</span>
+                                        <img src="images/character.png" class="avd" alt=""> <br>
+                                        <span class="avd">peter parker</span> <br>
+                                        <small class="text-muted avd">character</small>
+                                    </div>
+                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
+                                        <span class="el_line_text avd">#1</span>
+                                        <img src="images/character.png" class="avd" alt=""> <br>
+                                        <span class="avd">peter parker</span> <br>
+                                        <small class="text-muted avd">character</small>
+                                    </div>
+                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
+                                        <span class="el_line_text avd">#1</span>
+                                        <img src="images/character.png" class="avd" alt=""> <br>
+                                        <span class="avd">peter parker</span> <br>
+                                        <small class="text-muted avd">character</small>
+                                    </div>
+                                    <div class="tp_el mb-3 mr-3 pt-3 pb-3 avd">
+                                        <span class="el_line_text avd">#1</span>
+                                        <img src="images/character.png" class="avd" alt=""> <br>
+                                        <span class="avd">peter parker</span> <br>
+                                        <small class="text-muted avd">character</small>
+                                    </div>
 
 
                                 </div>

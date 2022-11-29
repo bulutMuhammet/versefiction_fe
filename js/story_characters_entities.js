@@ -1,7 +1,7 @@
 var team_sort = document.getElementById("team_sort")
 var tp_left_list = document.getElementById("tp_left_list")
 var delete_button = document.getElementById("delete_button")
-
+var selected_items = []
 new Sortable(team_sort, {
     animation: 150,
     multiDrag: true,
@@ -12,6 +12,7 @@ new Sortable(team_sort, {
     },
     onSelect: function (/**Event*/evt) {
         delete_button.classList.add("active_button")
+        selected_items.push(evt.item)
     },
 
 
@@ -21,6 +22,10 @@ document.addEventListener("click", (e)=>{
     var slc = document.getElementsByClassName("tp_el_selected")
     if (slc.length == 0){
         delete_button.classList.remove("active_button")
+
+    }
+    if(e.target.id){
+        removeElements()
     }
 })
 
@@ -51,9 +56,9 @@ function addElementToRight(e){
     // console.log(el)
 }
 
-function removeElements(e){
+function removeElements(){
 
-    var slc = document.getElementsByClassName("tp_el_selected")
+    var slc = selected_items
     for (var i = 0; i < slc.length; i++) {
         var tmp = slc[i]
         var el_img = tmp.getElementsByTagName("img")[0].src
@@ -76,4 +81,5 @@ function removeElements(e){
                                     </div>`
         tmp.remove()
     }
+    make_index()
 }
