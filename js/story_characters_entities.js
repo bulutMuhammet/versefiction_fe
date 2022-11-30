@@ -12,7 +12,9 @@ new Sortable(team_sort, {
     },
     onSelect: function (/**Event*/evt) {
         delete_button.classList.add("active_button")
-        selected_items.push(evt.item)
+
+        selected_items = evt.items
+        console.log(selected_items)
     },
 
 
@@ -20,13 +22,14 @@ new Sortable(team_sort, {
 
 document.addEventListener("click", (e)=>{
     var slc = document.getElementsByClassName("tp_el_selected")
-    if (slc.length == 0){
-        delete_button.classList.remove("active_button")
-
-    }
-    if(e.target.id){
+    if(e.target.id=="delete_button"){
         removeElements()
     }
+    if (slc.length == 0){
+        delete_button.classList.remove("active_button")
+    }
+
+
 })
 
 make_index()
@@ -57,7 +60,6 @@ function addElementToRight(e){
 }
 
 function removeElements(){
-
     var slc = selected_items
     for (var i = 0; i < slc.length; i++) {
         var tmp = slc[i]
@@ -82,4 +84,5 @@ function removeElements(){
         tmp.remove()
     }
     make_index()
+    selected_items = []
 }
