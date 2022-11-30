@@ -173,3 +173,22 @@
         font-size: 12px !important;
     }
 }
+
+#mb_search .modal-body{
+    background: #061014;
+    /*border-radius: 30px !important;*/
+    border-radius: 20px;
+    height: 300px !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow-y: auto;
+}
+
+#mb_search .modal-content{
+    background: #2C4C64;
+    border-radius: 30px !important;
+
+}
+#mb_search .modal-footer{
+    text-align: center !important;
+}

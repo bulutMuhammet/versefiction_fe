@@ -1,5 +1,6 @@
 var team_sort = document.getElementById("team_sort")
 var tp_left_list = document.getElementById("tp_left_list")
+var tp_left_list_mb = document.getElementById("tp_left_list_mb")
 var delete_button = document.getElementById("delete_button")
 var selected_items = []
 new Sortable(team_sort, {
@@ -14,7 +15,11 @@ new Sortable(team_sort, {
         delete_button.classList.add("active_button")
 
         selected_items = evt.items
-        console.log(selected_items)
+
+    },
+    // Element is unchosen
+    onUnchoose: function(/**Event*/evt) {
+        selected_items = evt.items
     },
 
 
@@ -22,13 +27,15 @@ new Sortable(team_sort, {
 
 document.addEventListener("click", (e)=>{
     var slc = document.getElementsByClassName("tp_el_selected")
+
     if(e.target.id=="delete_button"){
         removeElements()
     }
     if (slc.length == 0){
         delete_button.classList.remove("active_button")
+        selected_items=[]
     }
-
+    // console.log(selected_items)
 
 })
 
@@ -44,6 +51,8 @@ function make_index(){
 
 function addElementToRight(e){
     var el = e.parentElement.parentElement
+    var el_id = el.getAttribute("el_id")
+
     var el_img = el.getElementsByTagName("img")[0].src
     var el_title = el.getElementsByTagName("span")[0].textContent
     var el_type = el.getElementsByTagName("small")[0].textContent
@@ -56,7 +65,8 @@ function addElementToRight(e){
                              </div>`
     make_index()
     el.remove()
-    // console.log(el)
+    var will_delete = document.querySelector(`div[el_id=${el_id}]`)
+    will_delete.remove()
 }
 
 function removeElements(){
@@ -64,9 +74,10 @@ function removeElements(){
     for (var i = 0; i < slc.length; i++) {
         var tmp = slc[i]
         var el_img = tmp.getElementsByTagName("img")[0].src
+        var el_id = tmp.getAttribute("el_id_rm")
         var el_title = tmp.getElementsByTagName("span")[1].textContent
         var el_type = tmp.getElementsByTagName("small")[0].textContent
-        tp_left_list.innerHTML += `<div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row">
+        var content = `<div class="col-12 list_el pt-3 pb-3 pl-0 mb-2 row" el_id="${el_id}">
                                         <div class="col-2">
                                             <img class="float-left" src="${el_img}" alt="">
                                         </div>
@@ -81,6 +92,8 @@ function removeElements(){
                                             </button>
                                         </div>
                                     </div>`
+        tp_left_list.innerHTML += content
+        tp_left_list_mb.innerHTML += content
         tmp.remove()
     }
     make_index()

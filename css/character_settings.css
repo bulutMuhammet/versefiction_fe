@@ -1,0 +1,27 @@
+.character_img img {
+    border-radius: 100%;
+}
+.character_img{
+    position: relative;
+}
+
+.character_img button{
+    padding:0.4rem !important;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+
+#picture_modal .modal-content{
+    background: #27475F;
+    border-radius: 25px;
+}
+#picture_modal .modal-dialog {
+    max-width: 600px !important;
+
+}
+#edit_image {
+    width: 100% !important;
+    max-height: 600px;
+    object-fit: contain;
+}
