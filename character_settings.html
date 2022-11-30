@@ -30,13 +30,11 @@
         }
 
         /* The css styles for `outline` do not follow `border-radius` on iOS/Safari (#979). */
-        .cropper-view-box {
-            outline: 0;
-            box-shadow: 0 0 0 1px #39f;
-        }
+
         .cropper-container{
             max-width: 100% !important;
         }
+
     </style>
 
     <title>your works | dashboard</title>
@@ -294,7 +292,7 @@
 
                                 <div class=" text-center">
                                     <div class="character_img d-inline">
-                                        <button type="button" class="story_button radius_28" id="img_inp_fake"><i class="fa fa-pencil"></i></button>
+                                        <button type="button" class="story_button radius_28" id="img_inp_fake" data-toggle="modal" data-target="#picture_modal"><i class="fa fa-pencil"></i></button>
                                         <input type="file" hidden id="img_inp">
                                         <img src="images/character.png" alt="" >
 <!--                                        <button type="button" onclick="startCrop(this)">start</button>-->
@@ -307,10 +305,10 @@
 
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="images/universe_cover2.png"  alt="" id="edit_image">
+                                                    <img src="images/universe_cover.png"   alt="" id="edit_image">
                                                 </div>
                                                 <div class="modal-footer border-0" style="justify-content: center !important;">
-<!--                                                    <button type="button" onclick="startCrop(this)">go</button>-->
+                                                    <button type="button" onclick="startCrop(this)">go</button>
                                                     <button type="button" class="story_button cancel_color radius_28 " data-dismiss="modal">nevermind</button>
                                                 </div>
                                             </div>
@@ -369,7 +367,7 @@
         crossorigin="anonymous"></script>
 
 <script src="js/dashboard.js"></script>
-<script src="js/cropper/cropper2.js"></script>
+<script src="js/cropper/cropper.js"></script>
 <!--<script src="js/universe_settings.js"></script>-->
 <script src="js/character_settings.js"></script>
 <script>
