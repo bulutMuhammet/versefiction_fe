@@ -24,5 +24,6 @@
     <orderEntry type="library" name="635a21c716" level="application" />
     <orderEntry type="library" name="swiper" level="application" />
     <orderEntry type="library" name="635a21c716" level="application" />
+    <orderEntry type="library" name="ckeditor" level="application" />
   </component>
 </module>

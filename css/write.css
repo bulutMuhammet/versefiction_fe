@@ -1,0 +1,124 @@
+.story_button {
+    background: #73AFE2;
+    color: white;
+    border-color: transparent;
+    font-size: 16px;
+    line-height: 15px;
+    padding: 10px 20px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    transition: 0.2s;
+}
+
+.story_button:focus {
+    outline: transparent !important;
+}
+.story_button:hover{
+    background: #5783ab;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.story_button.last{
+    border-left: 4px solid #071217 ;
+    border-radius: 0 30px 30px 0;
+
+}
+.mob_title{
+    display: none;
+}
+.story_button.first{
+    width: 13rem !important;
+
+    border-radius: 30px 0 0 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 440px) {
+    .story_button.first{
+        width: 8rem !important;
+
+
+    }
+
+}
+
+.green{
+    background: #44D744 !important;
+
+}
+.cancel_color{
+    background: #E95872 !important;
+}
+
+.edit_color{
+    background: #9F98D6 !important;
+}
+.back{
+    background: #07212D !important;
+    /*background: #73AFE2 !important;*/
+
+}
+.radius_28{
+    border-radius: 28px;
+}
+.radius_full{
+    border-radius: 100%;
+}
+
+body{
+    background: #000D13;
+    font-family: 'Ubuntu';
+    font-style: normal;
+}
+
+.story_title{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+
+}
+.title_line {
+    background: linear-gradient(89.96deg, #57BEEA 0.03%, #9E98D7 94.37%);
+    height: 5px;
+}
+.write_nav{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100% !important; /* Full width */
+    z-index: 2;
+    background: #011A25;
+}
+
+.page_content{
+    width: 40%;
+    position: absolute;
+    margin: auto;
+    margin-top: 8%;
+    left: 0;
+    right: 0;
+    color: white !important;
+}
+
+.w_btn{
+    padding: 0.3rem 2rem !important;
+    width: 11rem;
+    text-align: center;
+
+}
+
+.chapter_title{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 67px;
+    max-width: 100%
+}

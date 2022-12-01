@@ -288,7 +288,7 @@
             <div class="right_inside mt-4 text-white pl-5 p-4 pr-5">
                 <div class="row justify-content-md-center p-xl-5 pr-2 ">
                     <div class="col-xl-7 inner_right_content col-12">
-                        <h3>edit your character</h3>
+                        <h3>edit your entity</h3>
                         <div class="title_line"></div>
 
                         <div class="edit_form mt-5">
@@ -324,10 +324,18 @@
                                 <input type="text" id="name" value="Spider Man"
                                        class="form-control input edit_u_inp"
                                        placeholder="andromeda and milkyway not allowed (those are galaxies idiot)">
-                                <label for="slogan" class="label mt-4">slogan</label>
-                                <input type="text" id="slogan" value="“With great power comes great responsibility”"
-                                       class="form-control input edit_u_inp"
-                                       placeholder="andromeda and milkyway not allowed (those are galaxies idiot)">
+                                <label for="category" class="label mt-4">category</label>
+                                <select id="category"
+                                        class="form-select text-center edit_u_inp lang_select form-control form-select-lg mb-3"
+                                        aria-label=".form-select-lg example">
+                                    <option disabled selected hidden style="color:red !important;">select category of entity
+                                    </option>
+                                    <option value="1">place</option>
+                                    <option value="2">item</option>
+                                    <option value="3">weapon</option>
+
+                                </select>
+
 
                                 <label for="detail" class="label mt-4">detail</label>
                                 <textarea rows="6" type="text" id="detail"
