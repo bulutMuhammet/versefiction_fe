@@ -29,8 +29,7 @@ body {
 
 .full_height {
     height: 91.5vh !important;
-    border-left: 3px solid #0E212A;
-    border-right: 3px solid #0E212A;
+    /*border-left: 3px solid #0E212A;*/
 
 }
 
@@ -38,10 +37,12 @@ body {
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%;
+    border-right: 3px solid #0E212A;
+
 }
 
 .page_right_side {
-    /*border-left: 3px solid #0E212A;*/
+    border-left: 3px solid #0E212A;
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%;
@@ -121,3 +122,5 @@ body {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
 }
+
+
