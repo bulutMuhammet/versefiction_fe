@@ -29,19 +29,26 @@ body {
 
 .full_height {
     height: 91.5vh !important;
-    border-left: 3px solid #0E212A;
-    border-right: 3px solid #0E212A;
+    /*border-left: 3px solid #0E212A;*/
+    /*border-right: 3px solid #0E212A;*/
 
+    overflow-x: auto;
+
+}
+.full_height::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 .page_left_side {
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%;
+    border-right: 3px solid #0E212A;
+
 }
 
 .page_right_side {
-    /*border-left: 3px solid #0E212A;*/
+    border-left: 3px solid #0E212A;
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
     max-width: 22%;
@@ -120,4 +127,28 @@ body {
     border-radius: 38px;
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
+}
+
+
+.el-list{
+    background: linear-gradient(180deg, #58BBE9 0%, #CD6396 100%);
+    border-radius: 12px;
+    padding-right: 2.3rem !important;
+}
+
+.el-list-div{
+    background: #071217;
+    border-radius: 38px;
+}
+
+@media screen and (max-width: 1660px) {
+    .el-list-div .col-10{
+        padding-left: 1.3rem !important;
+    }
+
+    .right_title{
+        font-weight: 400;
+        font-size: 17px !important  ;
+        line-height: 20px;
+    }
 }
