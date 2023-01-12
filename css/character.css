@@ -140,7 +140,9 @@ body {
     background: #071217;
     border-radius: 38px;
 }
-
+.chr_detail_mb{
+    display: none ;
+}
 @media screen and (max-width: 1660px) {
     .el-list-div .col-10{
         padding-left: 1.3rem !important;
@@ -151,4 +153,123 @@ body {
         font-size: 17px !important  ;
         line-height: 20px;
     }
+    .el-list{
+        margin-right: 0.3rem !important;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .page_left_side{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .el-list{
+        padding-left: 1rem !important;
+        padding-right: 1.8rem !important;
+    }
+    .el-list-div .col-10{
+        padding-left: 1.8rem !important;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .page_left_side{
+        display: none;
+    }
+
+    .page_right_side{
+        display: none;
+    }
+    .full_height{
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    .chr_detail_mb{
+        display: flex;
+    }
+
+}
+
+.chr_img_mb {
+    /*height: 100%;*/
+    width: 100%;
+    object-fit: contain;
+    max-height:80% !important;
+}
+
+.team_mb{
+    background: #092938;
+    border-radius: 11px;
+}
+
+.team_mb_div{
+    background: #071217;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .full_height{
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
+}
+@media screen and (max-width: 1080px) {
+
+    .full_height{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+}
+.team_mb_xs{
+    display: none;
+}
+@media screen and (max-width: 850px) {
+
+    .chr_mb_title{
+        font-size: 20px !important;
+    }
+    .chr_mb_un{
+        font-size: 12px !important;
+
+    }
+    .chr_mb_un .un{
+        font-size: 12px !important;
+
+    }
+    .full_height .col-8{
+        -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+    .chr_img_mb {
+        max-height:80% !important;
+        /*width: 85% !important;*/
+
+    }
+    .team_mb .row{
+        padding-right: 1rem!important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .team_mb_xs{
+        display: block;
+    }
+    .team_mb{
+        display: none;
+    }
+    .full_height .col-8{
+        padding:0 !important;
+    }
+    .team_mb_xs ul{
+        margin: 0!important;
+        margin-left: 0.9rem!important;
+        padding: 0!important;
+    }
+}
+
+.stories_list{
+    justify-content: left !important;
 }
